@@ -1,0 +1,179 @@
+1)34
+public class Main{
+    public static void main(String[] args) {
+    int a=34;
+        System.out.println(a);
+    }
+    
+}
+
+// 67
+public class Main{
+    public static void main(String[] args) {
+        int a=67;
+        System.out.println(a);
+    }
+}
+
+// 12
+public class Main{
+    public static void main(String[] args) {
+        int a =12;
+        System.out.println(a);
+    }
+}
+
+// 8.9
+public class Main{
+    public static void main(String[] args) {
+        float a =8.9f;
+        System.out.println(a);
+    }
+}
+
+// o
+public class Main{
+    public static void main(String[] args)
+    {
+        char a='o';
+        System.out.println(a);
+        
+    }
+}
+
+
+// w
+public class Main{
+    public static void main(String[] args)
+    {
+        char a='w';
+        System.out.println(a);
+    }
+}
+
+
+2)// r
+public class Main{
+    public static void main(String[] args)
+    {
+        char a='r';
+        System.out.println(a);
+    }
+}
+
+// 12
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=12;
+        System.out.println(a);
+    }
+}
+
+// -78
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=-78;
+        System.out.println(a);
+    }
+}
+
+// y
+public class Main{
+    public static void main(String[] args)
+    {
+        char a='y';
+        System.out.println(a);
+    }
+}
+
+// 8.9
+public class Main{
+    public static void main(String[] args)
+    {
+        float a= 8.9f;
+        System.out.println(a);
+    }
+}
+
+// 16
+public class Main{
+    public static void main(String[] args)
+    {
+        int a= 16;
+        System.out.println(a);
+    }
+}
+
+// -9.8
+public class Main{
+    public static void main(String[] args)
+    {
+        float a= -9.8f;
+        System.out.println(a);
+    }
+} 
+
+3)
+// 23 +9 
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=23;
+        int b=9;
+        int c;
+        c=a+b;
+        System.out.println(c);
+    }
+}
+
+// 23 -9 
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=23;
+        int b=9;
+        int c;
+        c=a-b;
+        System.out.println(c);
+    }
+}
+
+// 12*3  
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=12;
+        int b=3;
+        int c;
+        c=a*b;
+        System.out.println(c);
+    }
+}
+
+// 66/3
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=66;
+        int b=3;
+        int c;
+        c=a/b;
+        System.out.println(c);
+    }
+}
+
+// 56+78+34+12
+public class Main{
+    public static void main(String[] args)
+    {
+        int a=56;
+        int b=78;
+        int c=34;
+        int d=12;
+        int e;
+        e=a+b+c+d;
+        System.out.println(e);
+    }
+}
