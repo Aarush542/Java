@@ -1,0 +1,456 @@
+// int user input 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Value of a is " +a);
+
+    }
+}
+
+// float user input 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner obj=new Scanner(System.in);
+    System.out.println("Enter float value");
+    float a= obj.nextFloat();
+    System.out.println("Float value is "+a);
+    }
+}
+
+
+// double user input 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Double value");
+        double a=sc.nextDouble();
+        System.out.println("Value of double " +a);
+    }
+}
+
+// long user input 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter long value");
+        long a=obj.nextLong();
+        System.out.println("Value of long "+a);
+    }
+}
+
+// boolean user input
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter boolean value");
+        boolean a=obj.nextBoolean();
+        System.out.println("Value of boolean "+a);
+    }
+}
+
+// byte user input 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner obj= new Scanner(System.in);
+        System.out.println("Enter byte value");
+        byte a= obj.nextByte();
+        System.out.println("Value of byte "+a);
+    }
+}
+
+// short user input
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter short value");
+        short a=obj.nextShort();
+        System.out.println("Value of short "+a);
+    }
+}
+
+// 1)
+// 34 
+// 6.7
+// 12
+// 8.9
+// o
+// w 
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value");
+        int a=obj.nextInt();
+        System.out.println("Value is "+a);
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value");
+        float a=obj.nextFloat();
+        System.out.println("Value is "+a);
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value");
+        String a=obj.nextLine();
+        System.out.println("Value is "+a);
+    }
+}
+
+2)
+r
+12
+-78
+y
+8.9
+16
+-9.8
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value");
+        int a=obj.nextInt();
+        System.out.println("Value is "+a);
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value");
+        float a=obj.nextFloat();
+        System.out.println("Value is "+a);
+    }
+}
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value");
+        String a=obj.nextLine();
+        System.out.println("Value is "+a);
+    }
+}
+
+3)// 23 +9
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        int c;
+        c=a+b;
+        System.out.println("Addition is "+c );
+        
+    }
+}
+
+4)23-9
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        int c;
+        c=a-b;
+        System.out.println("Addit is "+c );
+        
+    }
+}
+
+// 12*3
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        int c;
+        c=a*b;
+        System.out.println("Multiplication is "+c );
+        
+    }
+}
+
+// 66/3
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        int c;
+        c=a/b;
+        System.out.println("Division is "+c );
+        
+    }
+}
+
+// 56+78+34+12
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        System.out.println("Enter value of c");
+        int c=obj.nextInt();
+        System.out.println("Enter value of d");
+        int d=obj.nextInt();
+int e;
+        e=a+b+c+d;
+        System.out.println("Addition is "+e );
+        
+    }
+}
+
+// 12*4-6/2
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        int a=obj.nextInt();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        System.out.println("Enter value of c");
+        int c=obj.nextInt();
+        System.out.println("Enter value of d");
+        int d=obj.nextInt();
+int e;
+        e=a*b-c/d;
+        System.out.println("Value is "+e );
+        
+    }
+}
+
+// 1.2*2-(8/2)
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        float a=obj.nextFloat();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        System.out.println("Enter value of c");
+        int c=obj.nextInt();
+        System.out.println("Enter value of d");
+        int d=obj.nextInt();
+float e;
+        e=a*b-c/d;
+        System.out.println("Value is "+e );
+        
+    }
+}
+
+// 12*7+45-(34-3)+3.4 -8.9 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter value of a");
+        float a=obj.nextFloat();
+        System.out.println("Enter value of b");
+        int b=obj.nextInt();
+        System.out.println("Enter value of c");
+        int c=obj.nextInt();
+        System.out.println("Enter value of d");
+        int d=obj.nextInt();
+        System.out.println("Enter value of f");
+        int f=obj.nextInt();
+        System.out.println("Enter value of g");
+        float g=obj.nextFloat();
+        System.out.println("Enter value of h");
+        float h=obj.nextFloat();
+float e;
+        e=a*b+c-(d-f)+g-h;
+        System.out.println("Value is "+e );
+        
+    }
+}
+
+// name :
+// Good morning name
+
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+        Scanner name=new Scanner(System.in);
+        System.out.println("Enter Name");
+        String a=name.nextLine();
+        System.out.println("Good Morning "+a);
+
+     }
+}
+
+// name :
+// how are you name? 
+
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+        Scanner name=new Scanner(System.in);
+        System.out.println("Enter Name");
+        String a=name.nextLine();
+        System.out.println("How are you "+a+ " ?");
+
+     }
+}
+
+// name:
+// my name is name and i am java trainer
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+        Scanner name=new Scanner(System.in);
+        System.out.println("Enter Name");
+        String a=name.nextLine();
+        System.out.println("My name is "+a+ " and i study at Regex");
+
+     }
+}
+
+// hi hello bye hello yes 
+import java.util.Scanner;
+
+public class Main {
+
+     public static void main(String[] args) {
+        Scanner name=new Scanner(System.in);
+        System.out.println("Enter Hello");
+        String a=name.nextLine();
+        System.out.println("Hi Hello Bye Yes");
+
+     }
+}
+
+// number swap :
+// with third variable 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        int a=2;
+        int b=3;
+        System.out.println("Values of a is "+a);
+        System.out.println("Values of b is "+b);
+        int c;
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("Swap values of a  " +a);
+        System.out.println("Swap values of b  " +b);
+    }
+}
+
+
+// number swap :
+// without third variable 
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        int a=2;
+        int b=3;
+        System.out.println("Values of a is "+a);
+        System.out.println("Values of b is "+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("Swap values of a " +a);
+        System.out.println("Swap values of b " +b);
+    }
+}
