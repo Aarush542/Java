@@ -1,18 +1,27 @@
-// number swap :
-// without third variable 
 
-import java.util.*;
+// 15)
+// char match 
+// a =>apple 
+// b :ball 
+// c :cat 
+// not match
 
-public class Main{
+import java.util.Scanner;
+
+public class Main {
+
     public static void main(String[] args) {
-        int a=2;
-        int b=3;
-        System.out.println("Values of a is "+a);
-        System.out.println("Values of b is "+b);
-        a=a+b;
-        b=a-b;
-        a=a-b;
-        System.out.println("Swap values of a " +a);
-        System.out.println("Swap values of b " +b);
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter a for apple, b for ball, c for cat");
+        String a=obj.nextLine();
+        if(a.equals("a")){
+            System.out.println("Apple");
+        }
+        else if(a.equals("b")){
+            System.out.println("Ball");
+        }
+        else if(a.equals("c")){
+            System.out.println("Cat");
+        }
     }
 }
