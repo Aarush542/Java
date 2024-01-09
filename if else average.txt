@@ -1,0 +1,692 @@
+// 1)C program to find out whether a given year is a leap year or not:
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+            Scanner obj=new Scanner(System.in);
+            System.out.println("Enter a year to check for leap year");
+            int a =obj.nextInt();
+            if(a%4==0)
+            {
+                System.out.println("Leap year");
+
+            }
+            else{
+                System.out.println("Not a leap year");
+            }
+
+    }
+}
+
+// 2)C program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+// cesius 
+// f 
+// c---f 
+// c 
+// f---->c 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter f for c to f conversion and c for f to c");
+        String a=obj.next();
+        if(a.equals("f"))
+        {
+            System.out.println("Enter temperature to convert from c to f ");
+            int c=obj.nextInt();
+            int f= (c*9/5)  + 32;
+            System.out.println("Converted value is "+f+" F");
+        }
+
+        else if(a.equals("c"))
+        {
+            System.out.println("Enter temperature to convert from f to c ");
+            int f=obj.nextInt();
+            int c=(f - 32) * 5/9;
+            System.out.println("Converted value is "+c+" C");
+        }
+    }
+}
+
+// 3)Check whether the trainge , square , reactanlge (area & volume)
+// ->input area /volume 
+// area 
+// traingle square rectangle 
+// square 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter 'a' for area or 'v' for volume");
+        String av=obj.next();
+        if(av.equals("a"))
+        {
+            System.out.println("t for area of triangle\n s for area of square\n r for area of rectangle");
+            String a=obj.next();
+            if(a.equals("t"))
+            {
+                System.out.println("Enter b");
+                int b=obj.nextInt();
+                System.out.println("Enter h");
+                int h=obj.nextInt();
+                float area=(0.5f*b*h);
+                System.out.println("Area of triangle "+area);
+            }
+            else if(a.equals("s"))
+            {
+                System.out.println("Enter a");
+                int s=obj.nextInt();
+                int area= s*s;
+                System.out.println("Area of Square "+area);
+            }
+            else if(a.equals("r"))
+            {
+                System.out.println("Enter l");
+                int l=obj.nextInt();
+                System.out.println("Enter w");
+                int w=obj.nextInt();
+                int area= l*w;
+                System.out.println("Area of rectangle "+area);
+            }
+
+        }
+
+        if(av.equals("v"))
+        {
+            System.out.println("t for volume of triangle\n s for volume of square\n r for volume of rectangle");
+            String a=obj.next();
+            if(a.equals("t"))
+            {
+                System.out.println("Enter b");
+                int b=obj.nextInt();
+                System.out.println("Enter h");
+                int h=obj.nextInt();
+                float volume=(b*h);
+                System.out.println("volume of triangle "+volume);
+            }
+            else if(a.equals("s"))
+            {
+                System.out.println("Enter a");
+                int s=obj.nextInt();
+                int volume= s*s*s;
+                System.out.println("volume of Square "+volume);
+            }
+            else if(a.equals("r"))
+            {
+                System.out.println("Enter l");
+                int l=obj.nextInt();
+                System.out.println("Enter w");
+                int w=obj.nextInt();
+                System.out.println("Enter h");
+                int h=obj.nextInt();
+                int volume= l*w*h;
+                System.out.println("volume of rectangle "+volume);
+            }
+
+        }
+       
+        else{
+            System.out.println("invalid");
+        }
+
+
+
+
+
+    }
+}
+
+// 4)java program to check whether a character is an alphabet or not
+// input =a =alpha 
+// 3 =this is a digit
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj= new Scanner(System.in);
+        System.out.println("Enter a character or digit");
+        char a=obj.next().charAt(0);
+
+if(a>='a' && a<='z')
+{
+ System.out.println("Entered character is a Aplphabet "+a);
+}
+else if(a>=1 && a<=100)
+{
+System.out.println("Entered character is a Digit "+a);
+}
+
+
+
+    }
+}
+
+// 5) Java program to enter student marks and find percentage and grade
+// A college has the following rules for the grading system:
+// 5 marks (grade + %)
+// 1. Below 25 – F
+// 2. 25 to 45 – E
+// 3. 45 to 50 – D
+// 4. 50 to 60 – C
+// 5. 60 to 80 – B 
+// 6. Above 80 – A
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj= new Scanner(System.in);
+        System.out.println("Enter Maths Marks");
+        int m=obj.nextInt();
+        System.out.println("Enter Physics Marks");
+        int p=obj.nextInt();
+        System.out.println("Enter Chemistry Marks");
+        int c=obj.nextInt();
+        System.out.println("Enter English Marks");
+        int e=obj.nextInt();
+        System.out.println("Enter Hindi Marks");
+        int h=obj.nextInt();
+    int mo=m+p+c+e+h;
+    System.out.println("Total Marks obtained "+mo);
+    int percentage=(mo * 100) / 500;
+    System.out.println("Percentage obtained "+percentage);
+    if(percentage>=80)
+    {
+        System.out.println("A");
+    }
+    if(percentage>=60 && percentage<80)
+    {
+        System.out.println("B");
+    }
+    if(percentage>=50 && percentage<60)
+    {
+        System.out.println("C");
+    }
+    if(percentage>=45 && percentage<50)
+    {
+        System.out.println("D");
+    }
+    if(percentage>=25 && percentage<45)
+    {
+        System.out.println("E");
+    }
+    if(percentage<25)
+    {
+        System.out.println("F");
+    }
+    
+    
+    }
+}
+
+// 6)Write a java program to accept the height of a person in centimeters and categorize the person according to their height.
+// ->meter ===>cm 
+// mid 
+// low 
+// high 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter height");
+        int h=obj.nextInt();
+        System.out.println("Entered height: "+h+" m");
+        int c=h*100;
+        System.out.println("Enterd heigt in cm: "+c+" cm");
+if(c>=500 && c<=1000)
+{
+    System.out.println("High level");
+}
+if(c>=250 && c<500)
+{
+    System.out.println("Mid level");
+}
+if(c>0 && c<250)
+{
+    System.out.println("Low level");
+}
+
+
+    }
+}
+
+// 7)Write a java program to read the roll no, name,fnname and marks of three subjects and calculate the total, percentage and division.
+// Test Data :
+// Input the Roll Number of the student :784
+// student name : 
+// fname:
+// mname:
+// address:
+// contact:
+// Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+// total: 
+// precentage : % 
+// division:
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter roll no");
+        int a=obj.nextInt();
+        System.out.println("Enter Name");
+        String n=obj.next();
+        System.out.println("Enter father name");
+        String fn=obj.next();
+        System.out.println("Enter Physics Marks");
+        int p=obj.nextInt();
+        System.out.println("Enter Chemistry Marks");
+        int c=obj.nextInt();
+        System.out.println("Enter Maths Marks");
+        int m=obj.nextInt();
+        int total= p+c+m;
+        System.out.println("Total Marks "+total );
+        int percentage=(total * 100) / 300;
+        System.out.println("Total percentage "+percentage);
+        
+        if(percentage>=60)
+        {
+            
+            System.out.println("First division");
+
+        }
+        else{
+            System.out.println("Second division");
+        }
+        
+        System.out.println("Enter roll number");
+        int rn=obj.nextInt();
+        if(rn==784)
+        {
+            System.out.println("Details for Roll Number " + rn);
+            System.out.println("Name: " + n);
+            System.out.println("Father's Name: " + fn);
+            System.out.println("Physics Marks: " + p);
+            System.out.println("Chemistry Marks: " + c);
+            System.out.println("Maths Marks: " + m);
+            System.out.println("Total Marks: " + total);
+            System.out.println("Percentage: " + percentage + "%");
+            
+        }
+
+    }
+}
+
+// 8) 5 number input 
+// >40 
+// average 
+// 3. 45 to 50 – D
+// 4. 50 to 60 – C
+// 5. 60 to 80 – B
+// 6. Above 80 – A 
+// otherwise fail 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in );
+        System.out.println("Enter 1");
+        int a=obj.nextInt();
+        System.out.println("Enter 2");
+        int b=obj.nextInt();
+        System.out.println("Enter 3");
+        int c=obj.nextInt();
+        System.out.println("Enter 4");
+        int d=obj.nextInt();
+        System.out.println("Enter 5");
+        int e=obj.nextInt();
+        int total=a+b+c+d+e;
+        System.out.println("Total marks "+total);
+        int percentage= (total*100)/500;
+        System.out.println("Total percentage "+percentage);
+        if(percentage>=80 && a>40 && b>40 && c>40 && d>40)
+        {
+            System.out.println("A");
+        }
+        else if(percentage>=60 && percentage<80 && a>40 && b>40 && c>40 && d>40 )
+        {
+            System.out.println("B");
+        }
+        else if(percentage>=50 && percentage<60 && a>40 && b>40 && c>40 && d>40 )
+        {
+            System.out.println("C");
+        }
+        else if(percentage>=45 && percentage<50 && a>40 && b>40 && c>40 && d>40 )
+        {
+            System.out.println("D");
+        }
+else{
+    System.out.println("Fail");
+}
+
+
+
+    }
+}
+
+// 9)three number max used only if else 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter a");
+        int a= obj.nextInt();
+        System.out.println("Enter b");
+        int b= obj.nextInt();
+        System.out.println("Enter c");
+        int c= obj.nextInt();
+
+if(a>b && a>c)
+{
+    System.out.println("a is greater than b and c");
+}
+else{
+    if(b>a && b>c)
+    {
+        System.out.println("b is greater tha a and c");
+    }
+
+else{
+    System.out.println("c is greater than a and b");
+}
+}
+    }
+}
+
+// 11) 
+// salary :
+// holidays (1) =full salary 
+// 2-5 =5% 
+// 5-14 =10% 
+// 15 =50% 
+// else =not salary 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Holiday");
+        int h=obj.nextInt();
+        System.out.println("Enter salary");
+        int s=obj.nextInt();
+        System.out.println("Salary: "+s);
+        System.out.println("holiday: "+h);
+        if(h<=1)
+        {
+            System.out.println("Full salary " +s);
+        }
+        else if(h>=2 && h<=5)
+        {
+         float salary=s-(s* 5/100);
+        
+         System.out.println("Salary received "+salary);
+        }
+        else if(h>5 && h<=14)
+        {
+         float salary=s-(s* 10/100);
+        
+         System.out.println("Salary received "+salary);
+        }
+        else if(h==15)
+        {
+         float salary=s-(s* 50/100);
+        
+         System.out.println("Salary received "+salary);
+        }
+        else if(h>15){
+            System.out.println("No salary");
+        }
+    }
+}
+
+
+// 11) 
+// salary :
+// holidays (1) =full salary 
+// 2-5 =5% 
+// 5-14 =10% 
+// 15 =50% 
+// else =not salary 
+// name:
+// address: 
+// bank details: 
+// salary : 
+// alot :
+//  holidays 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Name");
+        String n=obj.nextLine();
+        System.out.println("Address");
+        String a=obj.nextLine();
+        System.out.println("Bank Details");
+        String b=obj.nextLine();
+        System.out.println("Enter salary");
+        int s=obj.nextInt();
+        System.out.println("Enter holiday");
+        int h=obj.nextInt();
+        System.out.println("Salary: "+s);
+        System.out.println("holiday: "+h);
+        if(h<=1)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("Address: "+a);
+            System.out.println("Bank Details: "+b);
+            System.out.println("salary: "+s);
+            System.out.println("Full salary " +s);
+        }
+        else if(h>=2 && h<=5)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("Address: "+a);
+            System.out.println("Bank Details: "+b);
+            System.out.println("salary: "+s);
+         float salary=s-(s* 5/100);
+        
+         System.out.println("Salary received "+salary);
+        }
+        else if(h>5 && h<=14)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("Address: "+a);
+            System.out.println("Bank Details: "+b);
+            System.out.println("salary: "+s);
+         float salary=s-(s* 10/100);
+        
+         System.out.println("Salary received "+salary);
+        }
+        else if(h==15)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("Address: "+a);
+            System.out.println("Bank Details: "+b);
+            System.out.println("salary: "+s);
+         float salary=s-(s* 50/100);
+        
+         System.out.println("Salary received "+salary);
+        }
+        else if(h>15){
+            System.out.println("Name: "+n);
+            System.out.println("Address: "+a);
+            System.out.println("Bank Details: "+b);
+            System.out.println("salary: "+s);
+            System.out.println("No salary");
+        }
+    }
+}
+
+
+// 12)
+// electric city bill : 
+// 4 unit 
+// 40 
+// 1- 10 = 10% 
+// 11-20 =15% 
+// 21-40 =30% 
+// 50 =50% 
+
+// output : 
+// name:
+// unit :3 
+// amout 30 
+// discout : 10% 
+// total pay amount : 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter Name");
+        String n=obj.nextLine();
+        System.out.println("Enter unit");
+        int u=obj.nextInt();
+        System.out.println("Enter Amount");
+        int a=obj.nextInt();
+        int tb=u*a;
+        System.out.println("Total bill: "+tb);
+        if(u>=1 && u<=10)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("unit: "+u);
+            System.out.println("Amount: "+a );
+            System.out.println("Total bill: "+tb);
+            float discount= tb-(tb*10/100);
+            System.out.println("Bill after discount "+discount);
+        }
+         if(u>=11 && u<=20)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("unit: "+u);
+            System.out.println("Amount: "+a );
+            System.out.println("Total bill: "+tb);
+            float discount= tb-(tb*15/100);
+            System.out.println("Bill after discount "+discount);
+        }
+         if(u>=21 && u<=40)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("unit: "+u);
+            System.out.println("Amount: "+a );
+            System.out.println("Total bill: "+tb);
+            float discount= tb-(tb*30/100);
+            System.out.println("Bill after discount "+discount);
+        }
+         if(u>=50)
+        {
+            System.out.println("Name: "+n);
+            System.out.println("unit: "+u);
+            System.out.println("Amount: "+a );
+            System.out.println("Total bill: "+tb);
+            float discount= tb-(tb*50/100);
+            System.out.println("Bill after discount "+discount);
+        }
+    }
+}
+
+// 13) 
+// retailer 
+// customer 
+// retailer : 
+// 1-15 peices =15% 
+// 16-30 =30% 
+// 31-50 =50% 
+
+// output : 
+// reailer name :asish kumar 
+// peicies : 30 
+// discount : 
+
+// customer  : 
+// 1000 to 2000 -10% 
+// 100-1000 -5% 
+// 2000--3000 =15% 
+// 3000< 30% 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter r for Retailer and c for Customer");
+        String a=obj.nextLine();
+        if(a.equals("r"))
+        {
+            System.out.println("Enter pieces");
+            int piece=obj.nextInt();
+            System.out.println("Price per piece");
+            int price=obj.nextInt();
+            int totalprice=piece*price;
+            System.out.println("Total price "+totalprice);
+            if(piece>=1 && piece<=15)
+            {
+                int discount=totalprice-(totalprice*15/100);
+                System.out.println("Price after discount "+discount);
+            }
+            else if(piece>=16 && piece<30)
+            {
+                int discount=totalprice-(totalprice*30/100);
+                System.out.println("Price after discount "+discount);
+            }
+             else if(piece>=31 && piece<50)
+            {
+                int discount=totalprice-(totalprice*50/100);
+                System.out.println("Price after discount "+discount);
+            }
+             }
+             else if(a.equals("c")){
+            System.out.println("Enter pieces");
+            int piece=obj.nextInt();
+            System.out.println("Price per piece");
+            int price=obj.nextInt();
+            int totalprice=piece*price;
+            System.out.println("Total price "+totalprice);
+            if(price>=1000 && price<=2000)
+            {int discount=totalprice-(totalprice*10/100);
+                System.out.println("Price after discount "+discount);
+                }
+             
+            else if(price>=100 && price<1000)
+            {
+                int discount=totalprice-(totalprice*5/100);
+                System.out.println("Price after discount "+discount);
+            }
+
+             else if(price>2000 && price<3000)
+            {
+                int discount=totalprice-(totalprice*15/100);
+                System.out.println("Price after discount "+discount);
+            }
+            else if(price<=3000)
+            {
+                int discount=totalprice-(totalprice*30/100);
+                System.out.println("Price after discount "+discount);
+            }
+            }
+
+    }
+}
