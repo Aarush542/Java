@@ -1,0 +1,213 @@
+// advance :
+// 1)
+
+// XYZ Technologies is in the process of increment the salary of the employees. This
+// increment is done based on their salary and their performance appraisal rating.
+// If the appraisal rating is between 1 and 3, the increment is 10% of the salary.
+// If the appraisal rating is between 3.1 and 4, the increment is 25% of the salary.
+// If the appraisal rating is between 4.1 and 5, the increment is 30% of the salary.
+// Help them to do this, by writing a program that displays the incremented salary. Write a
+// class “IncrementCalculation.java” and write the main method in it.
+// Note : If either the salary is 0 or negative (or) if the appraisal rating is not in the range 1 to
+// 5 (inclusive), then the output should be “Invalid Input”.
+// Sample Input 1 :
+// Enter the salary
+// 8000
+// Enter the Performance appraisal rating
+// 3
+// Sample Output 1 :
+// 8800
+// Sample Input 2 :
+// Enter the salary
+// 7500
+// Enter the Performance appraisal rating
+// 4.3
+// Sample Output 2 :
+// 9750
+// Sample Input 3 :
+// Enter the salary
+// -5000
+// Enter the Performance appraisal rating
+// 6
+// Sample Output 3 :
+// Invalid Input
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Appraisal Rating: ");
+        float r=obj.nextFloat();
+         System.out.print("Salary: ");
+        float s=obj.nextInt();
+        if(r>=1 && r<=3)
+        {
+        float i=s+(s*10/100);
+        System.out.println(i);
+        }
+        else if(r>=3.1 && r<=4)
+        {
+            float i=s+(s*25/100);
+        System.out.println(i);
+        }
+        else if(r>=4.1 && r<=5)
+        {
+            float i=s+(s*30/100);
+        System.out.println(i);
+        }
+        else if(s<=0 || r<=0 ||r>6)
+        {
+           System.out.println("Invalid Input");
+        }
+    }
+}
+
+// 2)Problem Statement – Goutam and Tanul plays by telling numbers. Goutam says a number
+// to Tanul. Tanul should first reverse the number and check if it is same as the original. If yes,
+// Tanul should say “Palindrome”. If not, he should say “Not a Palindrome”. If the number is
+// negative, print “Invalid Input”. Help Tanul by writing a program.
+// Sample Input 1 :
+// 21212
+// Sample Output 1 :
+// Palindrome
+// Sample Input 2 :
+// 6186
+// Sample Output 2 :
+// Not a Palindrome
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter Number");
+        int a=obj.nextInt();
+        int rem,sum=0;
+        int temp=a;
+        while(a>0)
+        {
+            rem=a%10;
+            sum=sum*10 +rem;
+            a=a/10;
+          
+        }
+        if(temp==sum)
+        {
+            System.out.print("Tanul: Palindrome");
+        }
+        else{
+            System.out.print("Tanul: Not Palindrome");
+        }
+        }
+    }
+
+// 3)
+// In a theater, there is a discount scheme announced where one gets a 10% discount
+// on the total cost of tickets when there is a bulk booking of more than 20 tickets, and
+// a discount of 2% on the total cost of tickets if a special coupon card is submitted.
+// Develop a program to find the total cost as per the scheme. The cost of the k class
+// ticket is Rs.75 and q class is Rs.150. Refreshments can also be opted by paying an
+// additional of Rs. 50 per member.
+// Hint: k and q and You have to book minimum of 5 tickets and maximum of 40 at a
+// time. If fails display “Minimum of 5 and Maximum of 40 Tickets”. If circle is given a
+// value other than ‘k’ or ‘q’ the output should be “Invalid Input”.
+// The ticket cost should be printed exactly to two decimal places.
+// Sample Input 1:
+// Enter the no of ticket:35
+// Do you want refreshment:y
+// Do you have coupon code:y
+// Enter the circle:k
+// Sample Output 1:
+// Ticket cost:4065.25
+// Sample Input 2:
+// Enter the no of ticket:1
+// Sample Output 2:
+// // Minimum of 5 and Maximum of 40 Tickets
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter number of tickets");
+        int t=obj.nextInt();
+        System.out.println("Do you Want refreshments?");
+        String r=obj.next();
+        System.out.println("Do you have a coupon code?");
+        String cc=obj.next();
+        System.out.println("Enter the circle k/q");
+        String c=obj.next();
+        if(t>=20 && r.equals("y") && cc.equals("y") && c.equals("k") && t>5 && t<40 )
+        {
+            int ticketprice=75;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            int coupoundiscount=totaldiscount-(totaldiscount*2/100);
+            int refreshment=coupoundiscount+50;
+            System.out.println(refreshment);
+        }
+        if(t>=20 && r.equals("n") && cc.equals("y") && c.equals("k")&& t>5 && t<40)
+        {
+            int ticketprice=75;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            int coupoundiscount=totaldiscount-(totaldiscount*2/100);
+            System.out.println(coupoundiscount);
+        }
+        if(t>=20 && r.equals("y") && cc.equals("n") && c.equals("k")&& t>5 && t<40)
+        {
+            int ticketprice=75;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            int refreshment=totaldiscount+50;
+            System.out.println(refreshment);
+        }
+        if(t>=20 && r.equals("n") && cc.equals("n") && c.equals("k")&& t>5 && t<40)
+        {
+            int ticketprice=75;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            System.out.println(totaldiscount);
+        }
+        else if(t>=20 && r.equals("y") && cc.equals("y") && c.equals("q") && t>5 && t<40)
+        {
+            int ticketprice=150;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            int coupoundiscount=totaldiscount-(totaldiscount*2/100);
+            int refreshment=coupoundiscount+50;
+            System.out.println(refreshment);
+        }
+        if(t>=20 && r.equals("n") && cc.equals("y") && c.equals("q")&& t>5 && t<40)
+        {
+            int ticketprice=150;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            int coupoundiscount=totaldiscount-(totaldiscount*2/100);
+            System.out.println(coupoundiscount);
+        }
+        if(t>=20 && r.equals("y") && cc.equals("n") && c.equals("q")&& t>5 && t<40)
+        {
+            int ticketprice=150;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            int refreshment=totaldiscount+50;
+            System.out.println(refreshment);
+        }
+        if(t>=20 && r.equals("n") && cc.equals("n") && c.equals("q")&& t>5 && t<40)
+        {
+            int ticketprice=150;
+            int totalticketprice=t*ticketprice;
+            int totaldiscount=totalticketprice-(totalticketprice*10/100);
+            System.out.println(totaldiscount);
+        }
+        
+        else
+        {
+            System.out.println("Invali Input");
+        }
+    }
+}

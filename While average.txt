@@ -1,0 +1,70 @@
+// while : 
+// reverse number 
+// 657
+// 756 
+public class Main {
+
+    public static void main(String[] args) {
+        int a=657;
+        int rem,sum=0;
+        while(a>0)
+        {
+            rem = a % 10;
+            sum = sum * 10 + rem;
+            a = a / 10;
+            System.err.print(rem);
+        }
+    }
+}
+
+// pallindrome number 
+// 12321 
+public class Main {
+
+    public static void main(String[] args) {
+        int a=12321;
+    int rem,sum=0;
+    int temp=a;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum*10+rem;
+        a=a/10;
+    }
+    
+    if(temp==sum)
+    {
+        System.out.println("Number is Pallindrome");
+    }
+    else
+    {
+        System.out.println("Not pallindrom");
+    }
+    }
+}
+
+// armstrong number 
+// 153 
+public class Main {
+
+    public static void main(String[] args) {
+        int a=153;
+    int rem,sum=0;
+    int temp=a;
+    while(a>0)
+    {
+        rem=a%10;
+        sum=sum+rem*rem*rem;
+        a=a/10;
+    }
+    /*printf("%d",temp);*/
+    if(temp==sum)
+    {
+        System.out.println("Number is armstrong");
+    }
+    else
+    {
+        System.out.println("Not armstrong");
+    }
+    }
+}
