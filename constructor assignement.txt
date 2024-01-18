@@ -1,0 +1,222 @@
+// 1)Main constructor :multiplication 
+
+public class Main {
+Main()
+{
+    int a=2,b=5;
+    System.out.println(a*b);
+}
+    public static void main(String[] args) {
+        Main k=new Main();
+    }
+}
+
+// 2)
+// A class 
+// constructor :addition 
+
+// B class 
+// constructor :sub
+
+// C Class 
+// constructor :multi
+
+// Main class 
+// constructor :div
+
+// main method :access  
+class Add{
+    Add()
+    {
+        int a=2,b=2;
+        System.out.println(a+b);
+    }
+}
+class Sub{
+    Sub()
+    {
+        int a=4,b=2;
+        System.out.println(a-b);
+    }
+}
+class Multi{
+    Multi(){
+int a=4,b=2;
+System.out.println(a*b);
+    }
+}
+class Div{
+    Div()
+    {
+        int a=4,b=2;
+        System.out.println(a/b);
+    }
+}
+
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Add obj=new Add();
+        Sub obj1=new Sub();
+        Multi obj2=new Multi();
+        Div obj3=new Div();
+        
+    }
+}
+
+// 3) Main constructor :multiplication :parameterised constructor 
+// user define 
+
+import java.util.Scanner;
+
+class A
+{
+    A(int a)
+
+    {
+        System.out.println(a);
+    }
+}
+class B
+{
+    B(int b)
+
+    {
+        System.out.println(b);
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in); 
+        
+        System.out.println("Enter First digit");
+        int a=obj.nextInt();
+        A objA=new A(a);
+        System.out.println("Enter Second digit");
+        int b=obj.nextInt();
+        B objB= new B(b);
+        System.out.println(a*b);
+        
+    }
+}
+
+// 4)
+// class A 
+// constructor :default 
+// show1 :add
+// show2 :sub
+// show3 :mul
+// show4 :div 
+
+// a)constant
+// // b)user input 
+class A{
+    A()
+    {}
+
+void show1(){
+int a=2,b=3;
+System.out.println(a+b);
+}
+void show2(){
+    int a=2,b=3;
+    System.out.println(a-b);
+}
+void show3(){
+    int a=2,b=3;
+    System.out.println(a*b);
+}
+void show4(){
+    int a=6,b=2;
+    System.out.println(a/b);
+}
+}
+public class Main {
+
+    public static void main(String[] args) {
+        A obj=new A();
+        obj.show1();
+        obj.show2();
+        obj.show3();
+        obj.show4();
+    }
+}
+
+// 5)
+// A class 
+// constructor  
+// show1
+// show2
+
+// B class 
+// constructor  
+// show3
+// show4
+
+// Main class 
+// constructor
+// show5
+// show6
+
+// main() :access  
+class A{
+    A()
+    {
+System.out.println("constructor");
+    }
+    void show1()
+    {
+System.out.println("show1");
+    }
+    void show2()
+    {
+System.out.println("show2");
+    }
+}
+class B{
+    B()
+    {
+       System.out.println("constructor"); 
+    }
+    void show3()
+    {
+System.out.println("show3");
+    }
+    void show4()
+    {
+      System.out.println("show4");  
+    }
+}
+class C{
+    C()
+    {
+      System.out.println("constructor");  
+    }
+    void show5()
+    {
+System.out.println("show5");
+    }
+    void show6()
+    {
+        System.out.println("show6");
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+        A obj=new A();
+        obj.show1();
+        obj.show2();
+
+        B obj1=new B();
+        obj1.show3();
+        obj1.show4();
+
+        C obj2=new C();
+        obj2.show5();
+        obj2.show6();
+    }
+}

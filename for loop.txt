@@ -1,0 +1,307 @@
+// 1)Write a program to print numbers from 1 to 10.
+
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=1;i<=10;i++)
+        {
+            System.out.print(i +" ");
+        }
+    }
+}
+
+// 2)Write a program to calculate the sum of first 10 natural number.
+public class Main {
+
+    public static void main(String[] args) {
+        int sum=0;
+        for(int i=1;i<=10;i++)
+        {
+         sum+=i;
+           
+        }
+        System.out.println(sum + " ");
+    }
+}
+
+// // 3)Write a program that prompts the user to input a positive integer.
+//  It should then print the multiplication table of that number. 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter Positive integer");
+        int a=obj.nextInt();
+        int m;
+        for(int i=1;i<=10;i++)
+        {
+            
+            System.out.println(a+"x"+i+"="+a*i+" ");
+        }
+    }
+}
+
+// 5)1--->100 number print
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=1;i<=100;i++)
+        {
+            System.out.println(i);
+        }
+    }
+}
+
+// 6)100--->1 number print
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=100;i>=1;i--)
+        {
+            System.out.println(i);
+        }
+    }
+}
+
+// 7)1--->100 even number print sum
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=1;i<=100;i++)
+        {
+            if(i%2==0)
+            System.out.println(i);
+        }
+    }
+}
+
+// 8)100---->1odd number print sum
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=100;i>=1;i--)
+        {
+            if(i%2!=0)
+            System.out.println(i);
+        }
+    }
+}
+
+// 9)50--->1000 even number sum
+
+public class Main {
+
+    public static void main(String[] args) {
+        int sum=0;
+        for(int i=50;i<=1000;i++ )
+        {
+            if(i%2==0)
+            {
+sum+=i;
+            }
+        }
+        System.out.println(sum);
+    }
+}
+
+// 10)1000--->500 odd numbers sum
+public class Main {
+
+    public static void main(String[] args) {
+        int sum=0;
+        for(int i=1000;i>=500;i--)
+        {
+            if(i%2!=0)
+            {
+sum+=i;
+            }
+        }
+        System.out.println(sum);
+    }
+}
+
+// 1)table 2 to 10
+public class Main {
+
+    public static void main(String[] args) {
+        for (int i=2;i<=10;i++)
+        {
+            for(int j=1;j<=10;j++)
+            {
+                int m=i*j;
+                System.out.println(i+"x"+j+"="+m);
+            }
+        }
+    }
+}
+
+// 2)table print between range from user input 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Enter starting table");
+        int start=obj.nextInt();
+        System.out.println("Enter End table");
+        int end=obj.nextInt();
+        for( start=start;start<=end;start++)
+        {
+            for(int i=1;i<=10;i++)
+            {
+                int m=start*i;
+                System.out.println(start+"x"+i+"="+m);
+            }
+        }
+
+
+    }
+}
+
+// 3)1-->100 those type of numbers print (divisible by the multiple of any two numbers from user input ) 
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("number 1");
+        int start=obj.nextInt();
+        System.out.println("number 2");
+        int end=obj.nextInt();
+        for( int i=1;i<=100;i++)
+        {
+           if(i%(start*end)==0)
+           {
+            System.out.println(i);
+           }
+        }
+
+
+    }
+}
+
+// 3)1-->100 those type of numbers print (divisible by the multiple of any two numbers from user input ) 
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        for( int i=1;i<=100;i++)
+        {
+           if(i%(5*11)==0)
+           {
+            System.out.println(i);
+           }
+        }
+
+
+    }
+}
+
+// 5)print 2 table opposite 
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=10;i>=1;i--)
+        {
+            int m=2*i;
+            System.out.println(m);
+        }
+    }
+}
+
+// 6)print 2 table : 
+// like this format : 
+// 2 X 1 =2 
+// 2 X 2 =4 
+public class Main {
+
+    public static void main(String[] args) {
+        for(int i=1;i<=10;i++)
+        {
+            int m=2*i;
+            System.out.println(2+"x"+i+"="+m);
+        }
+    }
+}
+
+// // 7)write and make a program user input armstrong = then check number is armstrong and not ,
+//  when user input pallindrome =check number is pallindrome or not ,
+//   when user input reverse then check number is reverse or not (through user input ) 
+// (use if else if else and while loop and for loop only ) 
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("Armstrong/Pallindrome/Reverse");
+        String a=obj.nextLine();
+        if(a.equals("Armstrong"))
+        {
+            System.out.println("Enter number");
+            int num=obj.nextInt();
+            int rem,sum=0;
+            int temp=num;
+            while(num>0){
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+            }
+            if(temp==sum){
+            System.out.println("Number is armstrong");
+        }
+    
+        else{
+            System.out.println("Number is not Armstrong");
+        }
+    }
+         if(a.equals("Pallindrome"))
+         {
+            System.out.println("Enter number");
+            int num=obj.nextInt();
+            int rem,sum=0;
+            int temp=num;
+            while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+            }
+if(temp==sum){
+            System.out.println("Number is Pallindrome");
+        }
+else{
+    System.out.println("Number is not Pallindrome");
+}
+         }
+if(a.equals("Reverse"))
+         {
+            System.out.println("Enter number");
+            int num=obj.nextInt();
+            int rem,sum=0;
+            
+            while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        System.out.print(sum);    
+        }
+    }   
+else{
+    System.out.println("Invalid");
+}
+         }
+        }
+    
