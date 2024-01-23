@@ -1,0 +1,221 @@
+// 1)
+// Problem Statement – Chaman planned to choose a four digit lucky number for his car. His
+// lucky numbers are 3,5 and 7. Help him find the number, whose sum is divisible by 3 or 5 or
+// 7. Provide a valid car number, Fails to provide a valid input then display that number is not a
+// valid car number.
+// Note : The input other than 4 digit positive number[includes negative and 0] is considered as
+// invalid.
+// Refer the samples, to read and display the data.
+// Sample Input 1:
+// Enter the car no:1234
+// Sample Output 1:
+// Lucky Number
+// Sample Input 2:
+// Enter the car no:1214
+// Sample Output 2:
+// Sorry its not my lucky number
+// Sample Input 3:
+// Enter the car no:14
+// Sample Output 3:
+// 14 is not a valid car number
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value ");
+        int a = sc.nextInt();
+        int sum = 0;
+        int rem;
+        if  (a<1000 || a >9999){
+            System.out.println(a+" is a Invalid Number");
+                    }
+                    else{
+        while (a > 0) {
+            rem = a % 10;
+            sum = sum + rem;
+            a = a / 10;
+        }
+    
+        System.out.println(sum);
+        
+        if(sum%3==0 || sum%5==0 || sum%7==0)
+        {
+            System.out.println("Lucky Number");
+
+        }
+        else{
+            System.out.println("Sorry it's not a lucky number");
+        }
+    }
+    }
+        
+
+
+
+    }
+
+
+// 2)
+// XYZ Technologies is in the process of increment the salary of the employees. This
+// increment is done based on their salary and their performance appraisal rating.
+// If the appraisal rating is between 1 and 3, the increment is 10% of the salary.
+// If the appraisal rating is between 3.1 and 4, the increment is 25% of the salary.
+// If the appraisal rating is between 4.1 and 5, the increment is 30% of the salary.
+// Help them to do this, by writing a program that displays the incremented salary. Write a
+// class “IncrementCalculation.java” and write the main method in it.
+// Note : If either the salary is 0 or negative (or) if the appraisal rating is not in the range 1 to
+// 5 (inclusive), then the output should be “Invalid Input”.
+// Sample Input 1 :
+// Enter the salary
+// 8000
+// Enter the Performance appraisal rating
+// 3
+// Sample Output 1 :
+// 8800
+// Sample Input 2 :
+// Enter the salary
+// 7500
+// Enter the Performance appraisal rating
+// 4.3
+// Sample Output 2 :
+// 9750
+// Sample Input 3 :
+// Enter the salary
+// -5000
+// Enter the Performance appraisal rating
+// 6
+// Sample Output 3 :
+// Invalid Input
+
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Salary");
+        int s=sc.nextInt();
+        System.out.println("Enter Appraisal rating");
+        float a=sc.nextFloat();
+        if(a>=1 && a<=3)
+        {
+            int t=s+(s*10/100);
+            System.out.println(t);
+        }
+        if(a>=3.1 && a<=4)
+        {
+            int t=s+(s*25/100);
+            System.out.println(t);
+        }
+        if(a>=4.1 && a<=5)
+        {
+            int t=s+(s*30/100);
+            System.out.println(t);
+        }
+        if(s<=0 || a<=0 || a>=6)
+        {
+            System.out.println("Invalid Input");
+        }
+    }
+}
+
+// 3)
+// Problem Statement – Goutam and Tanul plays by telling numbers. Goutam says a number
+// to Tanul. Tanul should first reverse the number and check if it is same as the original. If yes,
+// Tanul should say “Palindrome”. If not, he should say “Not a Palindrome”. If the number is
+// negative, print “Invalid Input”. Help Tanul by writing a program.
+// Sample Input 1 :
+// 21212
+// Sample Output 1 :
+// Palindrome
+// Sample Input 2 :
+// 6186
+
+// Sample Output 2 :
+// Not a Palindrome
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj =new Scanner(System.in);
+        System.out.println("Enter value to check for pallindrome");
+        int a=obj.nextInt();
+        int rem,sum=0;
+        int temp=a;
+        if(a<=0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else{
+        while(a>0)
+        {
+            rem=a%10;
+            sum=sum*10+rem;
+            a=a/10;
+        }
+        if(temp==sum)
+        {
+            System.out.println("Tanul : Pallindrome");
+        }
+        
+        else{
+            System.out.println("Tanul : Not Pallindrome");
+        }
+    } 
+    }
+}
+
+// 5)
+// Problem Statement – Rhea Pandey’s teacher has asked her to prepare well for the
+// lesson on seasons. When her teacher tells a month, she needs to say the season
+// corresponding to that month. Write a program to solve the above task.
+// Spring – March to May,
+// Summer – June to August,
+// Autumn – September to November and,
+// Winter – December to February.
+// Month should be in the range 1 to 12. If not the output should be “Invalid month”.
+// Sample Input 1:
+// Enter the month:11
+// Sample Output 1:
+// Season:Autumn
+// Sample Input 2:
+// Enter the month:13
+// Sample Output 2:
+// Invalid month
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter Month");
+        int w=obj.nextInt();
+        if( w==3 || w==4|| w==5)
+        {
+            System.out.println("Spring");
+        }
+         if(w==6 ||w==7 ||w==8)
+        {
+            System.out.println("Summer");
+        }
+        if(w==9 ||w==10 ||w==11)
+        {
+            System.out.println("Autumm");
+        }
+        if(w==12 ||w==1 || w==2)
+        {
+            System.out.println("Winter");
+        }
+        else if(w>=13 || w<=0){
+            System.out.println("Invalid input");
+        }
+
+    }
+}
+
+

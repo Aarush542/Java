@@ -144,6 +144,73 @@ public class Main {
         obj.show4();
     }
 }
+// 4)
+// class A 
+// constructor :default 
+// show1 :add
+// show2 :sub
+// show3 :mul
+// show4 :div 
+
+// a)constant
+// // b)user input 
+
+import java.util.Scanner;
+
+class A{
+    A()
+    {
+        System.out.println("Constructor");
+    }
+void show1()
+{
+    Scanner obj=new Scanner(System.in);
+    System.out.println("Enter first value");
+    int a=obj.nextInt();
+    System.out.println("Enter Second value");
+    int b=obj.nextInt();
+    System.out.println(a+b);
+}
+void show2()
+{
+    Scanner obj=new Scanner(System.in);
+    System.out.println("Enter first value");
+    int a=obj.nextInt();
+    System.out.println("Enter Second value");
+    int b=obj.nextInt();
+    System.out.println(a-b);
+}
+void show3()
+{
+    Scanner obj=new Scanner(System.in);
+    System.out.println("Enter first value");
+    int a=obj.nextInt();
+    System.out.println("Enter Second value");
+    int b=obj.nextInt();
+    System.out.println(a*b);
+}
+void show4()
+{
+    Scanner obj=new Scanner(System.in);
+    System.out.println("Enter first value");
+    int a=obj.nextInt();
+    System.out.println("Enter Second value");
+    int b=obj.nextInt();
+    System.out.println(a/b);
+}
+
+
+}
+public class Main {
+
+    public static void main(String[] args) {
+       A obj=new A();
+       obj.show1();
+       obj.show2();
+       obj.show3();
+       obj.show4();
+    }
+}
 
 // 5)
 // A class 
