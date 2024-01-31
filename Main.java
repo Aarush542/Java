@@ -1,110 +1,98 @@
-// 5)
-// class A 
-// constructor :default :this is a constructor
-// add method:a+b :no return and no argument 
-// sub method:a-b  :no return and  argument 
+// email 
+// password 
+// name 
+// contact
+// addresss 
+// stream :BCA BBA 
+// language :english , hindi 
+// percentage :float 
 
-// class B 
-// constructor :parameter :a*b 
-// mod method:a%b : return and no argument 
-// multi method:a*b  : return and argument 
-
-
-// Main class 
-// Main constructor :parameter type 
-// sub method:a-b  :no return and  argument 
-
-
-// main method :
-// A 
-// B 
-// Main class 
+// user input 
+// getter settor method 
 
 import java.util.Scanner;
 
-class A{
-   A show()
-   {
-      System.out.println("This is a constructor");
-      return this;
-   }
-   void add()
-   {
-      Scanner sc=new Scanner(System.in);
-      System.out.println("Enter a for addition");
-      int a=sc.nextInt();
-      System.out.println("Enter b for addition");
-      int b=sc.nextInt();
-      System.out.println(a+b);
-
-   }
-   void sub(int a,int b)
-   {
-      System.out.println(a-b);
-      
-   }
-}
-class B{
-   B(int c,int d)
-   {
-System.out.println(c*d);
-   }
-int mod()
-{
-   Scanner sc =new Scanner(System.in);
-   System.out.println("Enter 1st value for mod");
-   int a=sc.nextInt();
-   System.out.println("Enter 1st value for mod");
-   int b=sc.nextInt();
-return a%b;
-}
-
-int multi(int e, int f)
-{
-return e*f;
-} 
-}
 public class Main {
-    void a(int g, int h)
-    {
-      System.out.println(g-h);
-    }
+ String Name;
+ Long Contact;
+ String Email;
+ String Address;
+ String Stream;
+ String Language;
+ Float Percentage;
+
+void form(String Name,Long Contact,String Email,String Address,String Stream,String Language,Float Percentage)
+{
+this.Name=Name;
+this.Contact=Contact;
+this.Email=Email;
+this.Address=Address;
+this.Stream=Stream;
+this.Language=Language;
+this.Percentage=Percentage;
+}
+
+String get()
+{
+   return Name;
+}
+
+long get1()
+{
+   return Contact;
+}
+
+String get2()
+{
+   return Email;
+}
+
+String get3()
+{
+   return Address;
+}
+
+String get4()
+{
+   return Stream;
+}
+
+String get5()
+{
+   return Language;
+}
+
+float get6()
+{
+   return Percentage;
+}
    public static void main(String[] args) {
-      A k=new A();
-      k.show();
-      k.add();
       Scanner sc=new Scanner(System.in);
-      System.out.println("Enter a for subtraction");
-      int a=sc.nextInt();
-      System.out.println("Enter b for subtraction");
-      int b=sc.nextInt();
-      k.sub(a, b);
-      System.out.println("Enter 1st value for Multi");
-      int c=sc.nextInt();
-      System.out.println("Enter 2nd value for Multi");
-      int d=sc.nextInt();
-      
+      System.out.println("Enter Name");
+      String Name=sc.nextLine();
+      System.out.println("Enter Contact");
+      Long Contact=sc.nextLong();
+      sc.nextLine();
+      System.out.println("Enter Email");
+      String Email=sc.nextLine();
+      System.out.println("Enter Address");
+      String Address=sc.nextLine();
+      System.out.println("Enter Stream");
+      String Stream=sc.nextLine();
+      System.out.println("Enter Language");
+      String Language=sc.nextLine();
+      System.out.println("Enter Percentage");
+      Float Percentage=sc.nextFloat();
 
-      B k1=new B(c, d);
-      System.out.println(k1.mod());
-      System.out.println("Enter 1st number for multiplication");
-      int e=sc.nextInt();
-      System.out.println("Enter 2nd number for multiplication");
-      int f=sc.nextInt();
-      System.out.println(k1.multi(e, f));
-      System.out.println("Enter number");
-      sc.nextInt();
-
-      Main k2=new Main();
-      System.out.println("Enter g for subtraction");
-      int g=sc.nextInt();
-      System.out.println("Enter h for subtraction");
-      int h=sc.nextInt();
-      k2.a(g, h);
+      Main k=new Main();
+      k.form(Name, Contact, Email, Address, Stream, Language, Percentage);
+      System.out.println("Name "+k.get());
+      System.out.println("Contact "+ k.get1());
+      System.out.println("Email "+k.get2());
+      System.out.println("Address "+k.get3());
+      System.out.println("Stream "+k.get4());
+      System.out.println("Language "+k.get5());
+      System.out.println("Percentage "+k.get6());
       
-
-      
-      
-   
-   }
+}
 }
