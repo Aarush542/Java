@@ -1,0 +1,1111 @@
+// A :parent
+// add :method :no return and no argument 
+// sub :method :no return and  argument 
+
+// B :child 
+// multi:method : return and no argument 
+// div:method : return and  argument 
+
+// Main 
+// B k through all method access krogey 
+
+// constant
+// user input 
+
+import java.util.Scanner;
+
+class A{
+void add()
+{
+ Scanner sc=new Scanner(System.in);
+ System.out.println("Enter 1st Value for addition");
+ int a=sc.nextInt();
+ System.out.println("Enter 2nd Value for addition");
+ int b=sc.nextInt();
+ System.out.println(a+b);  
+}
+
+void sub(int c,int d)
+{
+int e=c-d;
+System.out.println(e);
+} 
+}
+
+class B extends A {
+int multi()
+{
+   Scanner sc=new Scanner(System.in);
+ System.out.println("Enter 1st Value for Multiplication");
+ int a=sc.nextInt();
+ System.out.println("Enter 2nd Value for Multiplication");
+ int b=sc.nextInt();
+ return a*b;  
+}
+
+int div(int f,int g)
+{
+return f/g;
+}
+}
+public class Main{
+   public static void main(String[] args) {
+      B k=new B();
+      k.add();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for subtraction");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for subtraction");
+      int d=sc.nextInt();
+      k.sub(c, d);
+      System.out.println(k.multi());
+      System.out.println("Enter 1st value for Division");
+      int f=sc.nextInt();
+      System.out.println("Enter 2nd value for Division");
+      int g=sc.nextInt();
+      System.out.println(k.div(f, g));
+    }
+}
+
+// Constant
+// A :parent
+// add :method :no return and no argument 
+// sub :method :no return and  argument 
+
+// B :child 
+// multi:method : return and no argument 
+// div:method : return and  argument 
+
+// Main 
+// B k through all method access krogey 
+
+// constant
+// user input 
+
+import java.util.Scanner;
+
+class A{
+void add()
+{
+int a=5;
+int b=2;
+ System.out.println(a+b);  
+}
+
+void sub(int c,int d)
+{
+int e=c-d;
+System.out.println(e);
+} 
+}
+
+class B extends A {
+int multi()
+{
+  int a=5;
+  int b=2;
+ return a*b;  
+}
+
+int div(int f,int g)
+{
+return f/g;
+}
+}
+public class Main{
+   public static void main(String[] args) {
+      B k=new B();
+      k.add();
+      k.sub(10, 3);
+      System.out.println(k.multi());
+      System.out.println(k.div(10, 5));
+    }
+}
+
+// A :parent
+// add :method :no return and no argument 
+// sub :method :no return and  argument 
+
+// Main :child 
+// multi:method : return and no argument 
+// div:method : return and  argument 
+
+
+// Main k through all method access krogey 
+
+// constant
+
+// user input 
+
+import java.util.Scanner;
+
+class A{
+   void add()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for addition");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for addition");
+      int b=sc.nextInt();
+      System.out.println(a+b);
+   }
+
+   void sub(int c,int d)
+   {
+      System.out.println(c-d);
+   }
+}
+public class Main extends A{
+
+   int multi()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Multiplication");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for Multiplication");
+      int b=sc.nextInt();
+      return a*b;
+   }
+
+   int div(int e,int f)
+   {
+      return e/f;
+   }
+   public static void main(String[] args) {
+      Main k=new Main();
+      k.add();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for subtraction");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for subtraction");
+      int d=sc.nextInt();
+      k.sub(c, d);
+      System.out.println(k.multi());
+      System.out.println("Enter 1st value for Division");
+      int e=sc.nextInt();
+      System.out.println("Enter 2nd value for Division");
+      int f=sc.nextInt();
+      System.out.println(k.div(e, f));
+
+
+   }
+}
+
+//Constant
+// A :parent
+// add :method :no return and no argument 
+// sub :method :no return and  argument 
+
+// Main :child 
+// multi:method : return and no argument 
+// div:method : return and  argument 
+
+
+// Main k through all method access krogey 
+
+// constant
+
+// user input 
+
+import java.util.Scanner;
+
+class A{
+   void add()
+   {
+      int a=5;
+      int b=7;
+      System.out.println(a+b);
+   }
+
+   void sub(int c,int d)
+   {
+      System.out.println(c-d);
+   }
+}
+public class Main extends A{
+
+   int multi()
+   {
+      int a=5;
+      int b=2;
+      return a*b;
+   }
+
+   int div(int e,int f)
+   {
+      return e/f;
+   }
+   public static void main(String[] args) {
+      Main k=new Main();
+      k.add();
+      k.sub(5, 2);
+      System.out.println(k.multi());
+      System.out.println(k.div(10, 2));
+
+
+   }
+}
+
+// A :parent
+// A() :multi:default
+// add :method :no return and no argument 
+// sub :method :no return and  argument 
+
+// Main :child 
+// Main() :add :parameterised  :constructor 
+
+// multi:method : return and no argument 
+// div:method : return and  argument 
+
+
+// Main k through all method access krogey 
+
+// constant
+
+// user input
+
+import java.util.Scanner;
+
+class A{
+   A()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for multiplication");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for multiplication");
+      int b=sc.nextInt();
+      System.out.println(a*b);
+   }
+void add()
+{
+   Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Addition");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for Addition");
+      int b=sc.nextInt();
+      System.out.println(a+b);
+}
+
+void sub(int c,int d)
+{
+   System.out.println(c-d);
+}
+
+}
+
+public class Main extends A{
+Main(int e, int f )
+{
+   super();
+   System.out.println(e+f);
+}
+
+
+
+int multi()
+{
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Enter 1st value for Multiplication");
+   int a=sc.nextInt();
+   System.out.println("Enter 2nd value for Multiplication");
+   int b=sc.nextInt();
+   return a*b;
+}
+
+int div(int g,int h)
+{
+   return g/h;
+}
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Add");
+      int e=sc.nextInt();
+      System.out.println("Enter 2nd value for Add");
+      int f=sc.nextInt();
+      Main k=new Main(e, f);
+      k.add();
+      
+      System.out.println("Enter 1st value for Subtraction");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for Subtraction");
+      int d=sc.nextInt();
+      k.sub(c, d);
+      System.out.println(k.multi());
+      
+      System.out.println("Enter 1st value for Division");
+      int g=sc.nextInt();
+      System.out.println("Enter 2nd value for Division");
+      int h=sc.nextInt();
+      System.out.println(k.div(g, h));
+      
+      
+     
+     
+      
+   }
+}
+
+//Constant
+
+// A :parent
+// A() :multi:default
+// add :method :no return and no argument 
+// sub :method :no return and  argument 
+
+// Main :child 
+// Main() :add :parameterised  :constructor 
+
+// multi:method : return and no argument 
+// div:method : return and  argument 
+
+
+// Main k through all method access krogey 
+
+// constant
+
+// user input
+
+
+
+class A{
+   A()
+   {
+      int a=5;
+      int b=2;
+      System.out.println(a*b);
+   }
+void add()
+{
+   int a=5;
+   int b=2;
+      System.out.println(a+b);
+}
+
+void sub(int c,int d)
+{
+   System.out.println(c-d);
+}
+
+}
+
+public class Main extends A{
+Main(int e, int f )
+{
+   super();
+   System.out.println(e+f);
+}
+
+
+
+int multi()
+{
+   int a=5;
+   int b=10;
+   return a*b;
+}
+
+int div(int g,int h)
+{
+   return g/h;
+}
+   public static void main(String[] args) {
+      
+      Main k=new Main(5, 2);
+      k.add();
+      
+      
+      k.sub(10, 5);
+      System.out.println(k.multi());
+      System.out.println(k.div(10, 2));
+      
+      
+     
+     
+      
+   }
+}
+
+// A :parent
+// add :getter and setter  method  
+
+// B :child 
+// multi :getter and setter method 
+
+// Main 
+// B k through all method access krogey 
+
+// constant
+// user input 
+
+import java.util.Scanner;
+
+class A{
+   int a;
+   int b;
+   void setA(int a, int b)
+   {
+      this.a=a;
+      this.b=b;
+
+   }
+
+   int getA()
+   {
+      return a+b;
+   }
+}
+
+class B extends A{
+   int c;
+   int d;
+   void setB(int c, int d)
+   {
+      this.c=c;
+      this.d=d;
+
+   }
+
+   int getB()
+   {
+      return c*d;
+   }
+}
+public class Main {
+
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for addition");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for addition");
+      int b=sc.nextInt();
+      System.out.println("Enter 1st value for multi");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for multi");
+      int d=sc.nextInt();
+      B k=new B();
+      k.setA(a, b);
+      System.out.println(k.getA());
+      k.setB(c, d);
+      System.out.println(k.getB());
+
+   }
+}
+
+// Constant
+// A :parent
+// add :getter and setter  method  
+
+// B :child 
+// multi :getter and setter method 
+
+// Main 
+// B k through all method access krogey 
+
+// constant
+// user input 
+
+import java.util.Scanner;
+
+class A{
+   int a;
+   int b;
+   void setA(int a, int b)
+   {
+      this.a=a;
+      this.b=b;
+
+   }
+
+   int getA()
+   {
+      return a+b;
+   }
+}
+
+class B extends A{
+   int c;
+   int d;
+   void setB(int c, int d)
+   {
+      this.c=c;
+      this.d=d;
+
+   }
+
+   int getB()
+   {
+      return c*d;
+   }
+}
+public class Main {
+
+   public static void main(String[] args) {
+      
+      B k=new B();
+      k.setA(5, 2);
+      System.out.println(k.getA());
+      k.setB(7, 3);
+      System.out.println(k.getB());
+
+   }
+}
+
+// A :parent
+// add :getter and setter  method  
+
+// Main :child 
+// multi :getter and setter method 
+
+// Main k through all method access krogey 
+
+
+// user input
+// constant
+
+import java.util.Scanner;
+
+class A{
+   int a;
+   int b;
+   void setA(int a, int b)
+   {
+      this.a=a;
+      this.b=b;
+
+   }
+
+   int getA()
+   {
+      return a+b;
+   }
+}
+public class Main extends A {
+   int c;
+   int d;
+   void setB(int c, int d)
+   {
+      this.c=c;
+      this.d=d;
+
+   }
+
+   int getB()
+   {
+      return c*d;
+   }
+   public static void main(String[] args) {
+      
+      Main k= new Main();
+      k.setA(5, 2);
+      System.out.println(k.getA());
+      k.setB(7, 3);
+      System.out.println(k.getB());
+
+   }
+}
+
+//User input
+// A :parent
+// add :getter and setter  method  
+
+// B :child 
+// multi :getter and setter method 
+
+// Main 
+// B k through all method access krogey 
+
+// constant
+// user input 
+
+import java.util.Scanner;
+
+class A{
+   int a;
+   int b;
+   void setA(int a, int b)
+   {
+      this.a=a;
+      this.b=b;
+
+   }
+
+   int getA()
+   {
+      return a+b;
+   }
+}
+
+
+public class Main extends A {
+   int c;
+   int d;
+   void setB(int c, int d)
+   {
+      this.c=c;
+      this.d=d;
+
+   }
+
+   int getB()
+   {
+      return c*d;
+   }
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for addition");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for addition");
+      int b=sc.nextInt();
+      System.out.println("Enter 1st value for multi");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for multi");
+      int d=sc.nextInt();
+      Main k=new Main();
+      k.setA(a, b);
+      System.out.println(k.getA());
+      k.setB(c, d);
+      System.out.println(k.getB());
+
+   }
+}
+
+// A :parent
+// add :method :no return and no argument  
+
+// B :normal class 
+// multi :method: return and no argument   
+
+// C :normal class 
+// div :method: return and argument 
+ 
+// D class :child 
+// sub :method:no return and argument 
+ 
+// Main 
+// child k through all method access krogey 
+
+// constant
+// user input
+
+import java.util.Scanner;
+
+class A{
+   void add()
+   {
+      Scanner sc=new Scanner(System.in);
+         System.out.println("Enter 1st value for Addition");
+         int a=sc.nextInt();
+         System.out.println("Enter 2nd value for Addition");
+         int b=sc.nextInt();
+         System.out.println(a+b);
+   }
+}
+
+class B{
+   int multi()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Multiplication");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for Multiplication");
+      int b=sc.nextInt();
+      return a*b;
+   }
+}
+
+class C{
+   int div(int g,int h)
+   {
+      return g/h;
+   }
+}
+
+class D extends A {
+   void sub(int c,int d)
+   {
+      System.out.println(c-d);
+   }
+}
+
+public class Main {
+
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Division");
+      int g=sc.nextInt();
+      System.out.println("Enter 2nd value for Division");
+      int h=sc.nextInt();
+
+      System.out.println("Enter 1st value for Subtraction");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for Subtraction");
+      int d=sc.nextInt();
+      B k=new B();
+      k.multi();
+      C k1=new C();
+      System.out.println(k1.div(g, h));
+      D k2=new D();
+      k2.sub(c, d);
+      k2.add();
+      
+   }
+}
+
+//Constant
+// A :parent
+// add :method :no return and no argument  
+
+// B :normal class 
+// multi :method: return and no argument   
+
+// C :normal class 
+// div :method: return and argument 
+ 
+// D class :child 
+// sub :method:no return and argument 
+ 
+// Main 
+// child k through all method access krogey 
+
+// constant
+// user input
+
+import java.util.Scanner;
+
+class A{
+   void add()
+   {
+      int a=5;
+      int b=10;
+         System.out.println(a+b);
+   }
+}
+
+class B{
+   int multi()
+   {
+      int a=10;
+      int b=2;
+      return a*b;
+   }
+}
+
+class C{
+   int div(int g,int h)
+   {
+      return g/h;
+   }
+}
+
+class D extends A {
+   void sub(int c,int d)
+   {
+      System.out.println(c-d);
+   }
+}
+
+public class Main {
+
+   public static void main(String[] args) {
+      
+      B k=new B();
+      k.multi();
+      C k1=new C();
+      System.out.println(k1.div(10, 2));
+      D k2=new D();
+      k2.sub(5, 2);
+      k2.add();
+      
+   }
+}
+
+// A :parent1
+// add :method :no return and no argument  
+
+// B :parent2 class 
+// multi :method: return and no argument   
+
+// C :child1 class 
+// div :method: return and argument 
+ 
+// D class :child2 
+// sub :method:no return and argument 
+ 
+// Main 
+// dono child k through all method access krogey 
+
+// constant
+// user input
+
+import java.util.Scanner;
+//parent1
+class A{
+   void add()
+   {
+      Scanner sc=new Scanner(System.in);
+         System.out.println("Enter 1st value for Addition");
+         int a=sc.nextInt();
+         System.out.println("Enter 2nd value for Addition");
+         int b=sc.nextInt();
+         System.out.println(a+b);
+   }
+}
+//parent2
+class B{
+   int multi()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Multiplication");
+      int a=sc.nextInt();
+      System.out.println("Enter 2nd value for Multiplication");
+      int b=sc.nextInt();
+      return a*b;
+   }
+}
+//child1
+class C extends A{
+   int div(int g,int h)
+   {
+      return g/h;
+   }
+}
+//child2
+class D extends B {
+   void sub(int c,int d)
+   {
+      System.out.println(c-d);
+   }
+}
+
+public class Main {
+
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1st value for Division");
+      int g=sc.nextInt();
+      System.out.println("Enter 2nd value for Division");
+      int h=sc.nextInt();
+
+      System.out.println("Enter 1st value for Subtraction");
+      int c=sc.nextInt();
+      System.out.println("Enter 2nd value for Subtraction");
+      int d=sc.nextInt();
+      
+      C k=new C();
+      k.add();
+      System.out.println(k.div(g, h));
+
+      D k1=new D();
+      k1.sub(c, d);
+      System.out.println(k1.multi());
+      
+   }
+}
+//constant
+// A :parent1
+// add :method :no return and no argument  
+
+// B :parent2 class 
+// multi :method: return and no argument   
+
+// C :child1 class 
+// div :method: return and argument 
+ 
+// D class :child2 
+// sub :method:no return and argument 
+ 
+// Main 
+// dono child k through all method access krogey 
+
+// constant
+// user input
+
+import java.util.Scanner;
+//parent1
+class A{
+   void add()
+   {
+      Scanner sc=new Scanner(System.in);
+         System.out.println("Enter 1st value for Addition");
+         int a=sc.nextInt();
+         System.out.println("Enter 2nd value for Addition");
+         int b=sc.nextInt();
+         System.out.println(a+b);
+   }
+}
+//parent2
+class B{
+   int multi()
+   {
+      int a=5;
+      int b=2;
+      return a*b;
+   }
+}
+//child1
+class C extends A{
+   int div(int g,int h)
+   {
+      return g/h;
+   }
+}
+//child2
+class D extends B {
+   void sub(int c,int d)
+   {
+      System.out.println(c-d);
+   }
+}
+
+public class Main {
+
+   public static void main(String[] args) {
+      
+      
+      C k=new C();
+      k.add();
+      System.out.println(k.div(10, 2));
+
+      D k1=new D();
+      k1.sub(10, 7);
+      System.out.println(k1.multi());
+      
+   }
+}
+
+// A class :parent 
+// getter and settor method 
+// email 
+// password 
+// name 
+// contact
+
+
+
+// B class :child 
+// getter and settor method 
+
+// addresss 
+// stream :BCA BBA 
+// language :english , hindi 
+// percentage :float
+
+// Main class 
+// access 
+
+//parent class
+
+import java.util.Scanner;
+
+class A{
+   String Name;
+   Long Contact;
+   String Email;
+   String password;
+  
+  
+  void form(String Name,Long Contact,String Email,String password)
+  {
+  this.Name=Name;
+  this.Contact=Contact;
+  this.Email=Email;
+  this.password=password;
+  
+  }
+  
+  String get()
+  {
+     return Name;
+  }
+  
+  long get1()
+  {
+     return Contact;
+  }
+  
+  String get2()
+  {
+     return Email;
+  }
+  
+  String get3()
+  {
+     return password;
+  }
+  
+}
+
+class B extends A{
+   
+ String Address;
+ String Stream;
+ String Language;
+ Float Percentage;
+
+void form(String Address,String Stream,String Language,Float Percentage)
+{
+
+this.Address=Address;
+this.Stream=Stream;
+this.Language=Language;
+this.Percentage=Percentage;
+}
+
+
+String get4()
+{
+   return Address;
+}
+
+String get5()
+{
+   return Stream;
+}
+
+String get6()
+{
+   return Language;
+}
+
+float get7()
+{
+   return Percentage;
+}
+}
+
+public class Main {
+
+   public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter Name");
+      String Name=sc.nextLine();
+      System.out.println("Enter Contact");
+      Long Contact=sc.nextLong();
+      sc.nextLine();
+      System.out.println("Enter Email");
+      String Email=sc.nextLine();
+      System.out.println("Enter Password");
+      String Password=sc.nextLine();
+      System.out.println("Enter Address");
+      String Address=sc.nextLine();
+      System.out.println("Enter Stream");
+      String Stream=sc.nextLine();
+      System.out.println("Enter Language");
+      String Language=sc.nextLine();
+      System.out.println("Enter Percentage");
+      Float Percentage=sc.nextFloat();
+   B k=new B();
+   k.form(Name, Contact, Email, Password);
+   k.form(Address, Stream, Language, Percentage);
+   System.out.println("Name "+k.get());
+   System.out.println("Contact "+ k.get1());
+   System.out.println("Email "+k.get2());
+   System.out.println("password "+k.get3());
+   System.out.println("Address "+k.get4());
+   System.out.println("Stream "+k.get5());
+   System.out.println("Language "+k.get6());
+   System.out.println("Percentage "+k.get7());
+   
+   
+   }
+}

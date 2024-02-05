@@ -1,98 +1,55 @@
-// email 
-// password 
-// name 
-// contact
-// addresss 
-// stream :BCA BBA 
-// language :english , hindi 
-// percentage :float 
+// A ex B
+// show1 :A class 
 
-// user input 
-// getter settor method 
+// B ex C
+// show2 : B class
 
-import java.util.Scanner;
+// C ex D
+// show 3 :C class 
 
-public class Main {
- String Name;
- Long Contact;
- String Email;
- String Address;
- String Stream;
- String Language;
- Float Percentage;
+// D 
+// show 4:D class 
 
-void form(String Name,Long Contact,String Email,String Address,String Stream,String Language,Float Percentage)
-{
-this.Name=Name;
-this.Contact=Contact;
-this.Email=Email;
-this.Address=Address;
-this.Stream=Stream;
-this.Language=Language;
-this.Percentage=Percentage;
-}
-
-String get()
-{
-   return Name;
-}
-
-long get1()
-{
-   return Contact;
-}
-
-String get2()
-{
-   return Email;
-}
-
-String get3()
-{
-   return Address;
-}
-
-String get4()
-{
-   return Stream;
-}
-
-String get5()
-{
-   return Language;
-}
-
-float get6()
-{
-   return Percentage;
-}
-   public static void main(String[] args) {
-      Scanner sc=new Scanner(System.in);
-      System.out.println("Enter Name");
-      String Name=sc.nextLine();
-      System.out.println("Enter Contact");
-      Long Contact=sc.nextLong();
-      sc.nextLine();
-      System.out.println("Enter Email");
-      String Email=sc.nextLine();
-      System.out.println("Enter Address");
-      String Address=sc.nextLine();
-      System.out.println("Enter Stream");
-      String Stream=sc.nextLine();
-      System.out.println("Enter Language");
-      String Language=sc.nextLine();
-      System.out.println("Enter Percentage");
-      Float Percentage=sc.nextFloat();
-
-      Main k=new Main();
-      k.form(Name, Contact, Email, Address, Stream, Language, Percentage);
-      System.out.println("Name "+k.get());
-      System.out.println("Contact "+ k.get1());
-      System.out.println("Email "+k.get2());
-      System.out.println("Address "+k.get3());
-      System.out.println("Stream "+k.get4());
-      System.out.println("Language "+k.get5());
-      System.out.println("Percentage "+k.get6());
+// Main
+// one child k through all properties access
+class A extends B{
+   void show1()
+   {
       
+      System.out.println("A class");
+   }
 }
+
+class B extends C{
+   
+   void show2()
+   {
+      
+      System.out.println("B class");
+   }
+}
+
+class C extends D{
+   
+   void show3()
+   {
+      System.out.println("C class");
+   }
+}
+
+class D{
+   void show4()
+   {
+      System.out.println("D class");
+   }
+}
+public class Main {
+
+   public static void main(String[] args) {
+      A k=new A();
+      k.show1();
+      k.show2();
+      k.show3();
+      k.show4();
+   }
 }
