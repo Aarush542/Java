@@ -1,0 +1,324 @@
+// 1)
+// interface A 
+// add() :no return and no argument 
+// sub() :no return and  argument 
+// div() : return and no argument 
+// multi() : return and  argument 
+// mod() : return and no argument 
+
+// class B impl A 
+
+// user input 
+
+import java.util.Scanner;
+
+interface A{
+    void add();
+    void sub(int a , int b);
+    int div();
+    int multi(int c, int d);
+    int mod();
+}
+
+class B implements A{
+   public void add()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for addition");
+      int a=sc.nextInt();
+      System.out.println("Enter b for addition");
+      int b=sc.nextInt();
+      System.out.println("Addition "+ (a+b));
+   }
+   public void sub(int a , int b)
+   {
+      System.out.println(a-b);
+   }
+   public int div()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for div");
+      int a=sc.nextInt();
+      System.out.println("Enter b for div");
+      int b=sc.nextInt();
+      return a/b;
+   }
+   public int multi(int c, int d)
+   {
+      return c*d;
+   }
+   public int mod()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Mod");
+      int e=sc.nextInt();
+      System.out.println("Enter b for Mod");
+      int f=sc.nextInt();
+      return e%f;
+   }
+}
+public class Main{
+   public static void main(String[] args) {
+      B k=new B();
+      k.add();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Sub");
+      int a=sc.nextInt();
+      System.out.println("Enter b for Sub");
+      int b=sc.nextInt();
+      k.sub(a, b);
+      System.out.println(k.div());
+      System.out.println("Enter a for Multi");
+      int c=sc.nextInt();
+      System.out.println("Enter b for Multi");
+      int d=sc.nextInt();
+      System.out.println(k.multi(c, d));
+      System.out.println(k.mod());
+      
+   }
+}
+
+// 2)
+// interface A 
+// add() :no return and no argument 
+// sub() :no return and  argument 
+
+
+
+// class B impl A 
+// div() : return and no argument 
+
+// class C ex B 
+// multi() : return and  argument 
+// mod() : return and no argument
+ 
+// Main access
+// user input 
+
+import java.util.Scanner;
+
+interface A{
+    void add();
+    void sub(int a , int b);
+    
+}
+
+class B implements A{
+   public void add()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for addition");
+      int a=sc.nextInt();
+      System.out.println("Enter b for addition");
+      int b=sc.nextInt();
+      System.out.println("Addition "+ (a+b));
+   }
+   public void sub(int a , int b)
+   {
+      System.out.println(a-b);
+   }
+   public int div()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for div");
+      int a=sc.nextInt();
+      System.out.println("Enter b for div");
+      int b=sc.nextInt();
+      return a/b;
+   }
+   
+}
+
+class c extends B{
+   public int multi(int c, int d)
+   {
+      return c*d;
+   }
+   public int mod()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Mod");
+      int e=sc.nextInt();
+      System.out.println("Enter b for Mod");
+      int f=sc.nextInt();
+      return e%f;
+   }
+}
+public class Main{
+   public static void main(String[] args) {
+      c k=new c();
+      k.add();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Sub");
+      int a=sc.nextInt();
+      System.out.println("Enter b for Sub");
+      int b=sc.nextInt();
+      k.sub(a, b);
+      System.out.println(k.div());
+      System.out.println("Enter a for Multi");
+      int c=sc.nextInt();
+      System.out.println("Enter b for Multi");
+      int d=sc.nextInt();
+      System.out.println(k.multi(c, d));
+      System.out.println(k.mod());
+      
+   }
+}
+
+// 3)
+// interface A
+// add() :no return and no argument 
+
+
+// interface B 
+// multi() : return and  argument 
+// mod() : return and no argument 
+
+
+// interface C
+// sub() :no return and  argument 
+
+// interface D
+// div() : return and no argument 
+
+// class E im ABCD
+// constructor :add
+// covariant return type 
+
+// class F ex E
+// constructor :sub :56-134+89
+// covariant return type 
+
+
+// class G ex F
+// constructor :multi :5 vari
+// covariant return type 
+
+// user input 
+
+import java.util.Scanner;
+
+interface A{
+    void add();
+    
+    
+}
+
+interface B{
+   int multi(int c, int d);
+    int mod();
+}
+
+interface C{
+   void sub(int a , int b);
+}
+
+interface D{
+   int div();
+}
+
+class E implements A,B,C,D{
+   public void add()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for addition");
+      int a=sc.nextInt();
+      System.out.println("Enter b for addition");
+      int b=sc.nextInt();
+      System.out.println("Addition "+ (a+b));
+   }
+   public void sub(int a , int b)
+   {
+      System.out.println(a-b);
+   }
+   public int div()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for div");
+      int a=sc.nextInt();
+      System.out.println("Enter b for div");
+      int b=sc.nextInt();
+      return a/b;
+   }
+   public int multi(int c, int d)
+   {
+      return c*d;
+   }
+   public int mod()
+   {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Mod");
+      int e=sc.nextInt();
+      System.out.println("Enter b for Mod");
+      int f=sc.nextInt();
+      return e%f;
+   }
+   
+}
+
+class F extends E{
+   F(){
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Add");
+      int a=sc.nextInt();
+      System.out.println("Enter b for Add");
+      int b=sc.nextInt();
+      System.out.println("Enter c for Add");
+      int c=sc.nextInt();
+      int d=a-b+c;
+      System.out.println(d); 
+   }
+
+   F cov()
+   {
+      System.out.println("Hello");
+      return this;
+   }
+}
+
+class G extends F{
+G()
+{Scanner sc=new Scanner(System.in);
+   System.out.println("Enter a for multi");
+      int a=sc.nextInt();
+      System.out.println("Enter b for multi");
+      int b=sc.nextInt();
+      System.out.println("Enter c for multi");
+      int c=sc.nextInt();
+      System.out.println("Enter d for multi");
+      int d=sc.nextInt();
+      System.out.println("Enter e for multi");
+      int e=sc.nextInt();
+      System.out.println(a*b*c*d*e);
+   }
+   G cov1()
+   {
+      System.out.println("Hello 2");
+      return this;
+   }
+   
+}
+
+
+public class Main{
+   public static void main(String[] args) {
+      G k=new G();
+      k.add();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter a for Sub");
+      int a=sc.nextInt();
+      System.out.println("Enter b for Sub");
+      int b=sc.nextInt();
+      k.sub(a, b);
+      System.out.println(k.div());
+      System.out.println("Enter a for Multi");
+      int c=sc.nextInt();
+      System.out.println("Enter b for Multi");
+      int d=sc.nextInt();
+      System.out.println(k.multi(c, d));
+      System.out.println(k.mod());
+      System.out.println(k.cov());
+      System.out.println(k.cov1());
+      
+   }
+}
