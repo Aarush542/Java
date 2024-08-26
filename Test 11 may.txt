@@ -1,0 +1,252 @@
+// 1)
+// Problem Statement – Goutam and Tanul plays by telling numbers. Goutam says a number
+// to Tanul. Tanul should first reverse the number and check if it is same as the original. If yes,
+// Tanul should say “Palindrome”. If not, he should say “Not a Palindrome”. If the number is
+// negative, print “Invalid Input”. Help Tanul by writing a program.
+// Sample Input 1 :
+// 21212
+// Sample Output 1 :
+// Palindrome
+// Sample Input 2 :
+// 6186
+// Sample Output 2 :
+// Not a Palindrome
+
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Number");
+        int num=sc.nextInt();
+        int rem;
+        int temp=num;
+        int sum=0;
+        while (num>0) {
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        if(temp==sum){
+System.out.println("Number is Pallindrome");
+        }
+        else{
+            System.out.println("Not Pallindrome");
+        }
+
+    }
+}
+
+// 2)
+// Problem Statement – Rhea Pandey’s teacher has asked her to prepare well for the
+// lesson on seasons. When her teacher tells a month, she needs to say the season
+// corresponding to that month. Write a program to solve the above task.
+// Spring – March to May,
+// Summer – June to August,
+// Autumn – September to November and,
+// Winter – December to February.
+// Month should be in the range 1 to 12. If not the output should be “Invalid month”.
+// Sample Input 1:
+// Enter the month:11
+// Sample Output 1:
+// Season:Autumn
+// Sample Input 2:
+// Enter the month:13
+// Sample Output 2:
+// Invalid month
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number between 1-12 for month");
+        int num=sc.nextInt();
+        if(num>=3 && num<=5){
+            System.out.println("Spring Season");
+        }
+        if(num>=6 && num<=8){
+            System.out.println("Summer");
+        }
+        if(num>=9 && num<=11){
+            System.out.println("Autumn");
+        }
+        if(num==12 || num==1 || num==2)
+        {
+            System.out.println("Winter");
+        }
+        else if(num>=12 && num<=0){
+            System.out.println("Invalid Input");
+        }
+    }
+}
+
+
+// 3)
+// Problem Statement – FOE college wants to recognize the department which has
+// succeeded in getting the maximum number of placements for this academic year.
+// The departments that have participated in the recruitment drive are CSE,ECE,
+// MECH. Help the college find the department getting maximum placements. Check
+// for all the possible output given in the sample snapshot
+// Note : If any input is negative, the output should be “Input is Invalid”. If all
+// department has equal number of placements, the output should be “None of the
+// department has got the highest placement”.
+// Sample Input 1:
+// Enter the no of students placed in CSE:90
+// Enter the no of students placed in ECE:45
+// Enter the no of students placed in MECH:70
+// Sample Output 1:
+// Highest placement
+// CSE
+// Sample Input 2:
+// Enter the no of students placed in CSE:55
+// Enter the no of students placed in ECE:85
+// Enter the no of students placed in MECH:85
+// Sample Output 2:
+// Highest placement
+// ECE
+// MECH
+// Sample Input 3:
+// Enter the no of students placed in CSE:0
+// Enter the no of students placed in ECE:0
+// Enter the no of students placed in MECH:0
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Placements for CSE");
+        int a=sc.nextInt();
+        System.out.println("Enter Placements for ECE");
+        int b=sc.nextInt();
+        System.out.println("Enter Placements for Mech");
+        int c=sc.nextInt();
+
+        if(a>b && a>c)
+        {
+            System.out.println("CSE has got the highest placements");
+        }
+
+        else if(b>a && b>c)
+        {
+            System.out.println("ECE has got the highest placements");
+        }
+
+        else if(c>a && c>b)
+        {
+            System.out.println("MECH has got the highest placements");
+        }
+        else {
+            System.out.println("None of the department has got the highest placement");
+        }
+    }
+}
+
+// 5)
+// Problem Statement – An automobile company manufactures both a two wheeler (TW) and a
+// four wheeler (FW). A company manager wants to make the production of both types of
+// vehicle according to the given data below:
+// a)1st data, Total number of vehicle (two-wheeler + four-wheeler)=v
+// b)2nd data, Total number of wheels = W
+// The task is to find how many two-wheelers as well as four-wheelers need to manufacture as
+// per the given data.
+// Example :
+// Input :
+// 200 -> Value of V
+// 540 -> Value of W
+// Output :
+// TW =130 FW=70
+// Explanation:
+// 130+70 = 200 vehicles
+// (70*4)+(130*2)= 540 wheels
+// Constraints :
+// a)2<=W
+// b)W%2=0
+// c)V<W
+// Print “INVALID INPUT” , if inputs did not meet the constraints.
+// The input format for testing
+// The candidate has to write the code to accept two positive numbers separated by a new line.
+// a)First Input line – Accept value of V.
+// b)Second Input line- Accept value for W.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number of Two wheeler");
+        int a=sc.nextInt();
+        System.out.println("Enter number of Four wheeler");
+        int b=sc.nextInt();
+        int v= a+b;
+        System.out.println(a+ " " +"Two Wheeler");
+        System.out.println(b+ " " +"Four Wheeler");
+        System.out.println(v + " "+"Total Vehichles");
+        int tw=a*2;
+        int fw=b*4;
+        int w=tw+fw;
+        System.out.println(w+" "+"Total Wheels ");
+
+    }
+}
+
+// 6)
+// There is a JAR full of candies for sale at a mall counter. JAR has the capacity N, that is JAR
+// can contain maximum N candies when JAR is full. At any point of time. JAR can have M
+// number of Candies where M<=N. Candies are served to the customers. JAR is never remain
+// empty as when last k candies are left. JAR if refilled with new candies in such a way that
+// JAR get full.
+// Write a code to implement above scenario. Display JAR at counter with available number of
+// candies. Input should be the number of candies one customer can order at point of time.
+// Update the JAR after each purchase and display JAR at Counter.
+// Output should give number of Candies sold and updated number of Candies in JAR.
+// If Input is more than candies in JAR, return: “INVALID INPUT”
+// Given,
+// N=10, where N is NUMBER OF CANDIES AVAILABLE
+// K =< 5, where k is number of minimum candies that must be inside JAR ever.
+// Example 1:(N = 10, k =< 5)
+// Input Value
+// 3
+// Output Value
+// NUMBER OF CANDIES SOLD : 3
+// NUMBER OF CANDIES AVAILABLE : 7
+// Example : (N=10, k<=5)
+// Input Value
+// 0
+// Output Value
+// INVALID INPUT NUMBER OF
+// CANDIES LEFT : 10
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=10;
+        System.out.println("Total Candies "+" "+ n);
+        System.out.println("Number of Candies sold");
+        int a= sc.nextInt();
+        if(a>5 && a<10 ){
+            System.out.println("total number of candies sold "+" "+ a);
+            int left=n-a;
+            System.out.println("Candies Left "+" "+ left);
+        }
+        
+
+else if(a>=5){
+    System.out.println("Please enter value above 5");
+}
+
+        else if(a>10){
+            System.out.println("Invalid");
+        }
+
+
+
+    }
+}

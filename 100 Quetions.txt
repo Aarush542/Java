@@ -1,0 +1,160 @@
+// // 1)
+// // Create a Java program that simulates a game of Rock, Paper, Scissors between two players.
+//  Take the choices as input and determine the winner using "if-else if" statements. If it's a tie, print "Tie.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Player 1 Choose- 1) Rock 2) Scissors 3)Paper");
+        int p1=sc.nextInt();
+        System.out.println("Player 2 Choose- 1) Rock 2) Scissors 3)Paper");
+        int p2=sc.nextInt();
+        if(p1==1 && p2==2 )
+        {
+            System.out.println("Winner is P1 Rock");
+        }
+        if(p1==1 && p2==3 )
+        {
+            System.out.println("Winner is P2 Paper");
+        }
+        if(p1==2 && p2==3 )
+        {
+            System.out.println("Winner is P1 Scissors");
+        }
+        if(p1==2 && p2==1 )
+        {
+            System.out.println("Winner is P2 Rock");
+        }
+        if(p1==3 && p2==1 )
+        {
+            System.out.println("Winner is P1 Rock");
+        }
+        if(p1==3 && p2==2 )
+        {
+            System.out.println("Winner is P2 Scissors");
+        }
+        
+        if(p1==p2)
+        {
+            System.out.println("Tie");
+        }
+        
+    }
+}
+
+// // 2
+// // Create a Java program to determine whether a year is a leap year, but with additional conditions: 
+// if it's divisible by 4, it's a leap year, unless it's divisible by 100, except when it's also divisible by 400.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Year");
+        int year=sc.nextInt();
+        if(year%4==0 && year%100==0 || year%400==0)
+        {
+            System.out.println("Leap year");
+        }
+        else{
+            System.out.println("Not a leap year");
+        }
+
+
+    }
+}
+
+// // 5)
+// // Write a Java program to simulate a basic calculator that can perform addition,
+//  subtraction, multiplication, and division operations.
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter what you want to do 1) Add  2) Subtract  3)Multiplication  4) Division");
+        int c=sc.nextInt();
+        
+        if(c==1){
+        System.out.println("Enter 1st Number");
+        int a=sc.nextInt();
+        System.out.println("Enter 2nd Number");
+        int b=sc.nextInt();
+        int add=a+b;
+        System.out.println("addition of two number is "+" "+add);
+        }
+
+        if(c==2){
+            System.out.println("Enter 1st Number");
+            int a=sc.nextInt();
+            System.out.println("Enter 2nd Number");
+            int b=sc.nextInt();
+            int sub=a-b;
+            System.out.println("Subtraction of two number is "+" "+sub);
+            }
+
+            if(c==3){
+                System.out.println("Enter 1st Number");
+                int a=sc.nextInt();
+                System.out.println("Enter 2nd Number");
+                int b=sc.nextInt();
+                int Multi=a*b;
+                System.out.println("Multiplication of two number is "+" "+Multi);
+                }
+
+                if(c==4){
+                    System.out.println("Enter 1st Number");
+                    int a=sc.nextInt();
+                    System.out.println("Enter 2nd Number");
+                    int b=sc.nextInt();
+                    int div=a/b;
+                    System.out.println("Division of two number is "+" "+div);
+                    }
+
+    }
+}
+
+6)
+Create a program that reads a year and a month as input and prints the number of days in that month, considering leap years for February.
+import java.util.*;
+public class Main{
+    public static void main (String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter YEAR");
+        int a=sc.nextInt();
+        System.out.println("Enter Month");
+        int b=sc.nextInt();
+        int Month=31;
+        if(a%4==0 && b==2)
+        {
+            System.out.println("Leap year");
+            System.out.println(Month-2);
+        
+        }
+        else if( b==2)
+        {
+            
+            System.out.println(Month-3);
+        
+        }
+         else if(b==1 || b==3 || b==5 || b==7 || b==8 || b==9 || b==12)
+        {
+            
+            System.out.println(Month);
+        
+        }
+        
+        else if(b==4 || b==6 || b==10 || b==11)
+        {
+            
+            System.out.println(Month-1);
+        
+        }
+        
+        
+    }
+}

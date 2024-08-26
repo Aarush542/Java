@@ -1,0 +1,169 @@
+// 1)voter id 
+// =>user input 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter value");
+        int a =sc.nextInt();
+        String result=(a>=18) ? "Valid Age" : "Invalid Age";
+        System.out.println(result);
+    }
+}
+
+// 2)one number max a>10 
+// one number :
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter value");
+        int a =sc.nextInt();
+        String result=(a>10) ? "a is greater than 10" : "a is lesser than 10";
+        System.out.println(result);
+    }
+}
+
+// 3)two number max a b 
+// a ya b dono mey se bda konsa hey 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a =sc.nextInt();
+        System.out.println("Enter b value");
+        int b =sc.nextInt();
+        String result=(a>b) ? "a is greater than 10" :(b>a) ?"b is greater  than a":"";
+        System.out.println(result);
+    }
+}
+
+// 4)three number max a b c 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a =sc.nextInt();
+        System.out.println("Enter b value");
+        int b =sc.nextInt();
+        System.out.println("Enter c value");
+        int c =sc.nextInt();
+        String result=(a>b && a>c) ? "a is greater than b and c" :(b>a && b>c) ?"b is greater  than a and c":(c>a && c>b)?"C is greater than b and a":"";
+        System.out.println(result);
+    }
+}
+
+// 5)five number max abcde
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a =sc.nextInt();
+        System.out.println("Enter b value");
+        int b =sc.nextInt();
+        System.out.println("Enter c value");
+        int c =sc.nextInt();
+        System.out.println("Enter d value");
+        int d =sc.nextInt();
+        System.out.println("Enter e value");
+        int e =sc.nextInt();
+        String result=(a>b && a>c && a>d && a>e) ? "a is greater than b and c" :(b>a && b>c && b>d && b>e) ?"b is greater  than a and c":(c>a && c>b && c>d && c>e)?"C is greater than b and a":(d>a && d>b && d>c && d>e)?"d is greater":(e>a && e>b && e>d && e>c)?"E is greater":"";
+        System.out.println(result);
+    }
+}
+
+// 6) user 
+// -9 negative integer 
+// 5 positive integer 
+// 0 =zero 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a =sc.nextInt();
+    if(a>0)
+    {
+        System.out.println("Positive Integer");
+    }
+    
+    else if(a<0)
+    {
+        System.out.println("Negative Integer");
+    }
+    
+    else if(a==0)
+    {
+        System.out.println("Zero");
+    }
+
+    }
+}
+
+// 7) vowel and consonat 
+// ->a e i o u vowel 
+// consonant 
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value");
+        String a =sc.nextLine();
+    if(a.equals("a") || a.equals("e") || a.equals("i")|| a.equals("o") || a.equals("u"))
+    {
+        System.out.println("Vowel");
+    }
+    
+    else 
+    {
+        System.out.println("Consonant");
+    }
+    
+
+    }
+}
+
+// 8)divisible 5 and 11 
+// 	a)num dono se divide ho jb process ho 
+// 	b)num kisi se bhi divide ho jb process ho
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a =sc.nextInt();
+    if(a%5==0)
+    {
+        System.out.println("Number is divisible by 5 only");
+    }
+    if(a%11==0)
+    {
+        System.out.println("Number is divisible by 11 only");
+    }
+            if(a%5==0 && a%11==0)
+            {
+                System.out.println("Divisible by 5 and 11");
+            }
+        
+    
+
+    }
+    }

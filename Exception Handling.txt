@@ -1,0 +1,189 @@
+// 1)airthmetic excpetion 
+// class A 
+// 	show() :airthmetic excpetion does not handle 
+
+// class Main 
+// access :
+
+class A{
+    void show(){
+    int a=12/0;
+    System.out.println(a);
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        
+        A k=new A();
+        k.show();
+
+    }
+}
+
+Exception handle
+
+// 1)airthmetic excpetion 
+// class A 
+// 	show() :airthmetic excpetion does not handle 
+
+// class Main 
+// access :
+
+class A{
+    void show(){
+    try{int a=12/0;
+    System.out.println(a);
+    }
+    catch(ArithmeticException ex){
+System.out.println("Exception Handle");
+    }    
+}
+}
+
+public class Main{
+    public static void main(String[] args) {
+        
+        A k=new A();
+        k.show();
+
+    }
+}
+
+// class A 
+// 	show() :numberformat expcetions :
+//  excpetion   handle 
+
+// class Main 
+// access :
+
+class A{
+void show()
+{
+    try{
+        String s="Hello";
+        int a=Integer.parseInt(s);
+        System.out.println(a);
+    }
+    catch(NumberFormatException ex)
+    {
+System.out.println("Exception Handle");
+    }
+}
+}
+public class Main {
+
+    public static void main(String[] args) {
+        A k = new A();
+k.show();
+    }
+}
+
+// class A 
+// 	show() :nullpointer excpetion :
+//  excpetion   handle 
+
+// class Main 
+// access :
+
+class A{
+    void show()
+    {
+        try{
+            String s=null;
+            System.out.println(s.length());
+        }
+        catch (NullPointerException ex){
+System.out.println("Null Exception handle");
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        A k=new A();
+        k.show();
+    }
+}
+
+
+// class A
+// airthmetic excpetion   handle 
+
+// class B
+// nullpointer excpetion handle
+
+// class C
+// numberformat expcetions 
+
+// class D 
+// array index out of bound 
+
+// class Main 
+
+class A{
+    void show(){ 
+        try{
+            int a=68/0;
+            System.out.println(a);
+        }
+        catch(ArithmeticException ex){
+System.out.println("Arithmetic Exception Handle");
+        }
+}
+}
+class B{
+    void show()
+    {
+        try{
+            String s=null;
+            System.out.println(s.length());
+        }
+        catch(NullPointerException ex){
+            System.out.println("Null Pointer Exception Handle ");
+        }
+    }
+}
+class C{
+    void show(){
+        try{
+            String s="Hello";
+            int a=Integer.parseInt(s);
+            System.out.println(a);
+        }
+        catch(NumberFormatException ex){
+System.out.println("NumberFormatException Exception Handle");
+        }
+    }
+}
+class D{
+    void show(){
+        try{
+int a[]={1,2,3,4,5};
+for(int i=0;i<=a.length;i++)
+        {
+            System.out.print(a[i]);
+        }
+        }
+        catch(ArrayIndexOutOfBoundsException ex)
+        {
+            System.out.println("ArrayIndexOutOfBoundsException Exception Handle");
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        A k=new A();
+        k.show();
+        B k1=new B();
+        k1.show();
+        C k2=new C();
+        k2.show();
+        D k3=new D();
+        k3.show();
+
+    }
+}
