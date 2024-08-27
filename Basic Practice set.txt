@@ -889,3 +889,280 @@ public class Main {
         }
     }
 }
+
+// 37.Write a C program to input marks of five subjects Physics, Chemistry, Biology,
+// Mathematics and Computer. Calculate percentage and grade according to
+// following:
+// Percentage >= 90% : Grade A
+// Percentage >= 80% : Grade B
+// Percentage >= 70% : Grade C
+// Percentage >= 60% : Grade D
+// Percentage >= 40% : Grade E
+// Percentage < 40% : Grade F
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Physics Marks");
+        int a=sc.nextInt();
+        System.out.println("Enter Chemistry Marks");
+        int b=sc.nextInt();
+        System.out.println("Enter Biology Marks");
+        int c=sc.nextInt();
+        System.out.println("Enter Mathematics Marks");
+        int d=sc.nextInt();
+        System.out.println("Enter Computer Marks");
+        int e=sc.nextInt();
+
+        int total=a+b+c+d+e;
+        System.out.println(total);
+        float percentage=total/500.0f;
+        float percentage1=percentage*100f;
+        System.out.println(percentage1);
+        
+        if(percentage1>=90){
+            System.out.println("A");
+        }
+
+        if(percentage1>=80){
+            System.out.println("B");
+        }
+
+        if(percentage1>=70){
+            System.out.println("C");
+        }
+
+        if(percentage1>=60){
+            System.out.println("D");
+        }
+
+        if(percentage1>=40){
+            System.out.println("E");
+        }
+
+        if(percentage1<40){
+            System.out.println("F");
+        }
+
+    }
+}
+
+// 38.Write a C program to input basic salary of an employee and calculate its Gross
+// salary according to following:
+// Basic Salary <= 10000 : HRA = 20%, DA = 80%
+// Basic Salary <= 20000 : HRA = 25%, DA = 90%
+// Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Salary");
+        int salary=sc.nextInt();
+        if(salary<=10000){
+            int gs=salary*60/100;
+            int total=salary+gs;
+            System.out.println(total);
+        }
+
+        if(salary<=20000){
+            int gs=salary*65/100;
+            int total=salary+gs;
+            System.out.println(total);
+        }
+
+        if(salary>20000 ){
+            int gs=salary*65/100;
+            int total=salary+gs;
+            System.out.println(total);
+        }
+    }
+}
+
+// 39.Write a C program to input electricity unit charges and calculate total electricity
+// bill according to the given condition:
+// For first 50 units Rs. 0.50/unit
+// For next 100 units Rs. 0.75/unit
+// For next 100 units Rs. 1.20/unit
+// For unit above 250 Rs. 1.50/unit
+// An additional surcharge of 20% is added to the bill
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Unit");
+        float a=sc.nextFloat();
+        if(a<50){
+            float total=a*0.5f +0.2f;
+            float total1=total+a;
+            System.out.println(total1);
+        }
+        if(a<=100){
+            float total=a*0.75f+0.2f;
+            System.out.println(total);
+        }
+
+        if(a>100){
+            float total=a*1.20f+0.2f;
+            System.out.println(total);
+        }
+
+        if(a>250){
+            float total=a*1.20f+0.2f;
+            System.out.println(total);
+        }
+
+    }
+}
+
+// 40.Write a C program to print day of week name using switch case.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number for days");
+        int week=sc.nextInt();
+        switch (week) {
+            case 1:
+            System.out.println("Monday");
+                
+                break;
+
+                case 2:
+            System.out.println("Tuesday");
+                
+                break;
+                case 3:
+            System.out.println("Wednesday");
+                
+                break;
+                case 4:
+            System.out.println("Thurdsday");
+                
+                break;
+                case 5:
+            System.out.println("Friday");
+                
+                break;
+                case 6:
+            System.out.println("Saturday");
+                
+                break;
+                case 7:
+            System.out.println("Sunday");
+                
+                break;
+        
+        }
+    }
+}
+
+// 41.Write a C program print total number of days in a month using switch case.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Month");
+        int a=sc.nextInt();
+        switch (a) {
+            case 1:
+            System.out.println("31");
+                
+                break;
+
+                case 2:
+            System.out.println("31");
+                
+                break;
+                case 3:
+            System.out.println("31");
+                
+                break;
+                case 4:
+            System.out.println("31");
+                
+                break;
+                case 5:
+            System.out.println("31");
+                
+                break;
+                case 6:
+            System.out.println("31");
+                
+                break;
+                case 7:
+            System.out.println("31");
+                
+                break;
+                case 8:
+            System.out.println("31");
+                
+                break;
+                case 9:
+            System.out.println("31");
+                
+                break;
+                case 10:
+            System.out.println("31");
+                
+                break;
+                case 11:
+            System.out.println("31");
+                
+                break;
+                case 12:
+            System.out.println("31");
+                
+                break;
+
+        
+        }
+    }
+}
+
+// 42.Write a C program to check whether an alphabet is vowel or consonant using
+// switch case.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter character");
+        char a=sc.next().charAt(0);
+        switch (a) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            System.out.println("Vowel");
+                
+                break;
+
+                default :
+            System.out.println("Consonant");
+                
+                break;
+        
+            
+        }
+    }
+}
+
+Q43) Cannot solve using switch case
